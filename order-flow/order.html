@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBoost | Order Intake</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
+
+    <div class="container mx-auto px-6 py-12 max-w-3xl">
+        <div class="text-center mb-12">
+            <div class="text-3xl font-bold text-primary flex items-center justify-center gap-2 mb-4">
+                <i class="fas fa-rocket"></i>
+                <span>CareerBoost</span>
+            </div>
+            <h1 class="text-3xl font-bold">Complete Your Order</h1>
+            <p class="text-gray-600 mt-2">Just two steps to get your career moving forward.</p>
+        </div>
+
+        <!-- Step 1: Payment -->
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-8">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                <h2 class="text-2xl font-bold">Secure Payment</h2>
+            </div>
+            
+            <p class="text-gray-600 mb-6 leading-relaxed">
+                To start our 4-hour countdown, please complete your payment. A secure payment link will be provided via email immediately after you submit the form below, or you can use the direct <strong>PayPal Invoice</strong> link below for instant payment.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 text-center">
+                    <div class="font-bold">Resume Rewrite</div>
+                    <div class="text-primary font-black">$79</div>
+                </div>
+                <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100 text-center scale-105">
+                    <div class="font-bold">Career Bundle</div>
+                    <div class="text-indigo-600 font-black">$99</div>
+                </div>
+                <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100 text-center">
+                    <div class="font-bold">LinkedIn Only</div>
+                    <div class="text-gray-900 font-black">$49</div>
+                </div>
+            </div>
+
+            <a href="https://www.paypal.com/invoice/p/#TAZQP9TUJUDAXR8H" target="_blank" class="block w-full bg-[#0070ba] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#005ea6] transition flex items-center justify-center gap-2">
+                <i class="fab fa-paypal"></i>
+                Pay Now with PayPal — Secure Invoice
+            </a>
+            <p class="text-center text-sm text-gray-400 mt-4 italic">
+                *Click above to pay via PayPal invoice. After payment, fill out the form below.
+            </p>
+        </div>
+
+        <!-- Step 2: Intake Form -->
+        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                <h2 class="text-2xl font-bold">Your Career Details</h2>
+            </div>
+
+            <form id="orderForm" action="https://formsubmit.co/careerboost.service@gmail.com" method="POST" class="space-y-6">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_next" id="nextField" value="">
+                <input type="hidden" name="_subject" value="New CareerBoost Order!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <script>
+                    document.getElementById('nextField').value = window.location.href.replace('order.html', 'confirmation.html');
+                </script>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Full Name</label>
+                    <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Email Address</label>
+                    <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Phone Number (Optional)</label>
+                    <input type="tel" name="phone" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Service Selection</label>
+                    <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
+                        <option value="">Select a package...</option>
+                        <option value="resume">Resume Rewrite + Cover Letter ($79)</option>
+                        <option value="bundle">The Career Bundle ($99)</option>
+                        <option value="linkedin">LinkedIn Profile Optimization ($49)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Target Job Title</label>
+                    <input type="text" name="target_job" required placeholder="Senior Product Manager" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Current Resume / LinkedIn URL</label>
+                    <textarea name="resume_link" required placeholder="Paste your LinkedIn URL or a link to your current resume (Google Drive/Dropbox)..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition h-32"></textarea>
+                    <p class="text-xs text-gray-400 mt-2 italic">Since we don't support direct uploads here, please provide a link to your document.</p>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Key Achievements / Notes</label>
+                    <textarea name="notes" placeholder="Anything specific you want us to highlight?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition h-24"></textarea>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <input type="checkbox" name="payment_confirmed" required class="mt-1 w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary">
+                    <p class="text-sm text-gray-600">I understand that I will receive a payment link via email to finalize my order.</p>
+                </div>
+
+                <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                    Submit My Details
+                </button>
+            </form>
+        </div>
+
+        <div class="mt-12 text-center text-gray-400 text-sm">
+            &copy; 2026 CareerBoost. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
