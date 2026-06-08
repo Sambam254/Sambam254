@@ -3,67 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerBoost | Order Intake</title>
+    <title>CareerBoost | Order</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2563eb',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
-
     <div class="container mx-auto px-6 py-12 max-w-3xl">
-        <div class="text-center mb-12">
-            <div class="text-3xl font-bold text-primary flex items-center justify-center gap-2 mb-4">
-                <i class="fas fa-rocket"></i>
-                <span>CareerBoost</span>
-            </div>
-            <h1 class="text-3xl font-bold">Complete Your Order</h1>
-            <p class="text-gray-600 mt-2">Just two steps to get your career moving forward.</p>
-        </div>
+        <h1 class="text-3xl font-bold text-center mb-4">Complete Your Order</h1>
+        <p class="text-gray-600 text-center mb-12">Step 1: Pay → Step 2: Fill Form</p>
 
-        <!-- Step 1: Payment -->
+        <!-- STEP 1: Choose & Pay -->
         <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-8">
-            <div class="flex items-center gap-4 mb-6">
-                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-                <h2 class="text-2xl font-bold">Secure Payment</h2>
-            </div>
-            
-            <p class="text-gray-600 mb-6 leading-relaxed">
-                To start our 4-hour countdown, please complete your payment. A secure payment link will be provided via email immediately after you submit the form below, or you can use the direct <strong>PayPal Invoice</strong> link below for instant payment.
-            </p>
+            <h2 class="text-2xl font-bold mb-2">1. Choose Your Package & Pay</h2>
+            <p class="text-gray-500 mb-6">Click your package to pay via PayPal:</p>
 
-            <div class="grid md:grid-cols-3 gap-4 mb-8">
-                <div class="p-4 bg-blue-50 rounded-2xl border border-blue-100 text-center">
-                    <div class="font-bold">Resume Rewrite</div>
-                    <div class="text-primary font-black">$79</div>
-                </div>
-                <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100 text-center scale-105">
-                    <div class="font-bold">Career Bundle</div>
-                    <div class="text-indigo-600 font-black">$99</div>
-                </div>
-                <div class="p-4 bg-gray-50 rounded-2xl border border-gray-100 text-center">
-                    <div class="font-bold">LinkedIn Only</div>
-                    <div class="text-gray-900 font-black">$49</div>
-                </div>
-            </div>
-
-<a href="https://paypal.me/ONESTOPTHERAPYSHOP" target="_blank" class="block w-full bg-[#0070ba] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#005ea6] transition flex items-center justify-center gap-2">
-                        <p class="text-center text-sm text-gray-400 mt-4 italic">
-                *Click above to pay via PayPal invoice. After payment, fill out the form below.
-            </p>
+            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="block w-full bg-white border-2 border-blue-600 text-blue-600 py-4 px-6 rounded-xl font-bold hover:bg-blue-50 transition flex items-center justify-between mb-3">
+                <span>📄 Resume + Cover Letter</span>
+                <span class="text-2xl">$79</span>
+            </a>
+            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="block w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-between shadow-lg mb-3">
+                <span>⭐ Career Bundle (Best Value)</span>
+                <span class="text-2xl">$99</span>
+            </a>
+            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="block w-full bg-white border-2 border-gray-300 py-4 px-6 rounded-xl font-bold hover:bg-gray-50 transition flex items-center justify-between">
+                <span>🔗 LinkedIn Only</span>
+                <span class="text-2xl">$49</span>
+            </a>
         </div>
 
-        <!-- Step 2: Intake Form -->
+        <!-- STEP 2: Form -->
         <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+            <h2 class="text-2xl font-bold mb-6">2. Submit Your Details</h2>
+
+            <form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" class="space-y-6">
+                <input type="hidden" name="_subject" value="New CareerBoost Order!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://sambam254.github.io/Sambam254/order-flow/confirmation.html">
+
+                <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200">
+                <input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-200">
+                <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200">
+                    <option value="">Select Package</option>
+                    <option value="resume">Resume + Cover Letter ($79)</option>
+                    <option value="bundle">Career Bundle ($99)</option>
+                    <option value="linkedin">LinkedIn Only ($49)</option>
+                </select>
+                <input type="text" name="target_job" required placeholder="Target Job Title" class="w-full px-4 py-3 rounded-xl border border-gray-200">
+                <textarea name="resume_link" required placeholder="LinkedIn URL or Resume Link" class="w-full px-4 py-3 rounded-xl border border-gray-200 h-24"></textarea>
+                
+                <div class="bg-green-50 p-4 rounded-xl border border-green-200 flex items-start gap-3">
+                    <input type="checkbox" name="payment_confirmed" required class="mt-1 w-5 h-5">
+                    <p class="text-sm">✅ I have paid via PayPal in Step 1</p>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg">
+                    Submit Order →
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
             <div class="flex items-center gap-4 mb-6">
                 <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
                 <h2 class="text-2xl font-bold">Your Career Details</h2>
