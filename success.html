@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Received | CareerBoost</title>
+    <title>Order Confirmed | One Stop Therapy Shop</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FAF7F2; }
+        h1 { font-family: 'Playfair Display', serif; }
+        .bg-gold { background-color: #D4AF37; }
+        .bg-deep-green { background-color: #0A2E26; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex items-center justify-center">
-
-    <div class="max-w-md w-full bg-white p-12 rounded-3xl shadow-2xl border border-gray-100 text-center">
-        <div class="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-8">
-            <i class="fas fa-check"></i>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-xl p-10 text-center border border-stone-100">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-green-50 rounded-full mb-8">
+            <svg class="h-10 w-10 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
         </div>
-        <h1 class="text-3xl font-bold mb-4">Form Submitted!</h1>
-        <p class="text-gray-600 mb-10 leading-relaxed">
-            Great! We've received your career details. To finalize your order and start the 4-hour countdown, please complete your payment via PayPal.
+        <h1 class="text-3xl font-bold text-deep-green mb-4">Order Received!</h1>
+        <p class="text-stone-600 mb-8 leading-relaxed">
+            Thank you for choosing One Stop Therapy Shop. Your career transformation has begun!
         </p>
-
-        <div class="space-y-4">
-            <a href="https://www.paypal.me/careerboost" target="_blank" class="block w-full bg-[#0070ba] text-white py-4 rounded-xl font-bold text-lg hover:bg-[#005ea6] transition flex items-center justify-center gap-2">
-                <i class="fab fa-paypal"></i>
-                Pay via PayPal
-            </a>
-            
-            <div class="pt-6 border-t border-gray-100 mt-6">
-                <p class="text-sm text-gray-400 mb-4">
-                    Once payment is confirmed, our specialists will begin working on your documents immediately.
-                </p>
-                <a href="index.html" class="text-primary font-semibold hover:underline">
-                    <i class="fas fa-arrow-left mr-2"></i> Back to Homepage
-                </a>
-            </div>
+        
+        <div class="bg-stone-50 rounded-2xl p-6 text-left mb-8">
+            <h2 class="text-xs font-bold text-deep-green uppercase tracking-widest mb-4">What's Next?</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">1.</span>
+                    <span class="text-sm text-stone-600">If you haven't yet, please email your current resume to <strong class="text-deep-green">samantha.r.russell@outlook.com</strong>.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">2.</span>
+                    <span class="text-sm text-stone-600">Our 4-hour countdown begins once we receive your file and payment confirmation.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">3.</span>
+                    <span class="text-sm text-stone-600">You'll receive your optimized documents via email.</span>
+                </li>
+            </ul>
         </div>
+        
+        <a href="index.html" class="inline-block bg-deep-green text-white px-8 py-3 rounded-xl font-bold transition hover:bg-gold hover:shadow-lg">
+            Return Home
+        </a>
     </div>
-
 </body>
 </html>
