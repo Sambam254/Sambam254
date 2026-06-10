@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
-    <title>One Stop Therapy Shop | Professional Wellness, HR & Legal Support</title>
-    <meta name="description" content="Holistic professional ecosystem bridging the gap between professional excellence and personal well-being. Crown Signature branding, wellness services, and HR/Legal resources.">
-    <meta name="keywords" content="professional wehllness, HR resources, legal document support, career coaching, resume rewrite, Crown Signature, holistic health">
+    <title>One Stop Therapy Shop | Legal Document Support &amp; Career Services &mdash; Oshawa, ON</title>
+    <meta name="description" content="Samantha Russell provides expert legal document support and AI-enhanced career services in Oshawa &amp; the Greater Toronto Area. Resumes, court documents, LinkedIn optimization &mdash; delivered fast.">
+    <meta name="keywords" content="legal document support, career coaching, resume rewrite, LinkedIn optimization, HR resources, professional wellness, Oshawa, Greater Toronto Area">
     <meta name="author" content="One Stop Therapy Shop">
-    
-    <!-- Scripts & Fonts -->
+    <link rel="canonical" href="https://onestoptherapyshop.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="One Stop Therapy Shop | Legal &amp; Career Services &mdash; Oshawa, ON">
+    <meta property="og:description" content="Expert legal document support and AI-enhanced career coaching by Samantha Russell in Oshawa, ON.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://onestoptherapyshop.com/">
+
+    <!-- Scripts &amp; Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -28,14 +35,14 @@
         .bg-deep-green { background-color: #0A2E26; }
         .text-deep-green { color: #0A2E26; }
         .bg-ivory { background-color: #FAF7F2; }
-        
+
         .gold-divider {
             width: 80px;
             height: 2px;
             background: linear-gradient(90deg, #D4AF37, #F5E6A3, #D4AF37);
             margin: 1.5rem auto;
         }
-        
+
         .section-tag {
             font-size: 0.7rem;
             font-weight: 600;
@@ -43,7 +50,7 @@
             text-transform: uppercase;
             color: #D4AF37;
         }
-        
+
         .product-card {
             background: #FFFFFF;
             border: 1px solid #E7E5E4;
@@ -60,7 +67,7 @@
             border: 2px solid #D4AF37;
             position: relative;
         }
-        
+
         .btn-primary {
             background-color: #0A2E26;
             color: white;
@@ -75,7 +82,7 @@
             background-color: #D4AF37;
             box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
         }
-        
+
         .btn-outline {
             border: 2px solid #0A2E26;
             color: #0A2E26;
@@ -89,409 +96,355 @@
             background: #0A2E26;
             color: white;
         }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: rgba(212,175,55,0.08);
+            border: 1px solid rgba(212,175,55,0.3);
+            border-radius: 999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #0A2E26;
+        }
     </style>
 </head>
 <body class="text-stone-800 leading-relaxed">
 
-    <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-stone-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center space-x-3">
-                    <img src="assets/crown-signature-logo.png" alt="Crown Signature Logo" class="h-10 w-10 object-contain">
-                    <span class="text-xl font-bold text-deep-green tracking-tight">One Stop <span class="text-gold italic">Therapy Shop</span></span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#legal" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Legal</a>
-                    <a href="#career" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Career</a>
-                    <a href="#resources" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Resources</a>
-                    <a href="#contact" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" aria-label="Toggle Menu" class="text-deep-green p-2">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
+<!-- Navigation -->
+<nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+            <div class="flex items-center space-x-3">
+                <img src="assets/crown-signature-logo.png" alt="Crown Signature Logo" class="h-10 w-10 object-contain">
+                <span class="text-xl font-bold text-deep-green tracking-tight">One Stop <span class="text-gold italic">Therapy Shop</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">About</a>
+                <a href="#legal" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Legal</a>
+                <a href="#career" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Career</a>
+                <a href="#resources" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Resources</a>
+                <a href="#contact" class="btn-primary px-6 py-2 text-sm">Book a Consultation</a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" aria-label="Toggle Menu" class="text-deep-green p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 px-4 py-6 space-y-4">
-            <a href="#legal" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Legal</a>
-            <a href="#career" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Career</a>
-            <a href="#resources" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Resources</a>
-            <a href="#contact" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Contact</a>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 px-4 py-6 space-y-4">
+        <a href="#about" class="block text-stone-600 py-2 font-medium hover:text-gold transition">About</a>
+        <a href="#legal" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Legal</a>
+        <a href="#career" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Career</a>
+        <a href="#resources" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Resources</a>
+        <a href="#contact" class="block text-deep-green py-2 font-bold hover:text-gold transition">Book a Consultation</a>
+    </div>
+</nav>
+
+<main>
+<!-- Hero Section -->
+<section class="bg-white py-20 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="section-tag mb-4 block">Serving the Greater Toronto Area</span>
+        <h1 class="text-5xl md:text-7xl font-bold text-deep-green mb-6">Legal Support. <span class="text-stone-400">Career Growth.</span></h1>
+        <p class="text-stone-600 max-w-2xl mx-auto text-lg md:text-xl font-light mb-4 leading-relaxed">Hi, I'm Samantha &mdash; and I built this to help you. Whether you're navigating the legal system alone or ready to level up your career, you're in the right place.</p>
+        <p class="text-stone-500 max-w-xl mx-auto text-base font-light mb-10">Document support for self-represented litigants, professional services for legal practitioners, and AI-enhanced career coaching &mdash; all under one roof.</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+            <a href="#legal" class="btn-primary px-10 py-4">Explore Legal Services</a>
+            <a href="#career" class="btn-outline px-10 py-4">Career Services</a>
+            <a href="#contact" class="btn-outline px-10 py-4" style="border-color:#D4AF37;color:#0A2E26;">Get in Touch</a>
         </div>
-    </nav>
+        <!-- Trust Bar -->
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+            <span class="trust-badge"><svg class="h-4 w-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>BA Criminology &amp; Justice</span>
+            <span class="trust-badge"><svg class="h-4 w-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>HR &amp; Recruitment Background</span>
+            <span class="trust-badge"><svg class="h-4 w-4 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>Small Business Owner</span>
+        </div>
+    </div>
+</section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="bg-white py-20 md:py-32">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <span class="section-tag mb-4 block">Serving the Greater Toronto Area</span>
-                <h1 class="text-5xl md:text-7xl font-bold text-deep-green mb-8">
-                    Legal Support. <span class="text-stone-400">Career Growth.</span>
-                </h1>
-                <p class="text-stone-600 max-w-2xl mx-auto text-lg md:text-xl font-light mb-10 leading-relaxed">
-                    Document support for self-represented litigants, professional services for legal practitioners, and AI-enhanced career coaching — all under one roof.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#legal" class="btn-primary px-10 py-4">Explore Legal Services</a>
-                    <a href="#career" class="btn-outline px-10 py-4">Career Services</a>
-                </div>
+<!-- About Samantha Section -->
+<section id="about" class="py-24 bg-ivory border-t border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="section-tag mb-4 block">About</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-6">Meet Samantha</h2>
+                <div class="gold-divider" style="margin-left:0;margin-right:auto;"></div>
+                <p class="text-stone-600 text-lg font-light leading-relaxed mb-6">I'm Samantha Russell &mdash; a BA Criminology &amp; Justice graduate, HR professional, and small business owner based in Oshawa, Ontario. I built One Stop Therapy Shop because I've seen first-hand how overwhelming the legal system and job market can be, especially when you're navigating them alone.</p>
+                <p class="text-stone-600 text-base font-light leading-relaxed mb-6">With a background in human resources and recruitment, I understand what employers want &mdash; and I know how to translate your experience into results. On the legal side, I bring structure, clarity, and professionalism to help self-represented litigants and legal practitioners alike.</p>
+                <p class="text-stone-600 text-base font-light leading-relaxed mb-10">My mission is simple: give you the tools, documents, and support you need to move forward with confidence.</p>
+                <a href="#contact" class="btn-primary px-10 py-4">Work With Me</a>
             </div>
-        </section>
-
-        <!-- Legal Document Support Section -->
-        <section id="legal" class="py-24 bg-ivory border-t border-stone-100">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="section-tag">Practice Areas</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Legal Document Support</h2>
-                    <p class="text-stone-600 max-w-2xl mx-auto text-lg font-light leading-relaxed">
-                        Professional document preparation and support for individuals and legal professionals navigating the justice system.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- For Self Represented Litigants -->
-                    <div class="bg-white rounded-2xl p-10 border border-stone-100 shadow-sm">
-                        <div class="flex items-center space-x-4 mb-6">
-                            <svg class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                            </svg>
-                            <h3 class="text-2xl font-bold text-deep-green">For Self Represented Litigants</h3>
-                        </div>
-                        <p class="text-stone-600 mb-8 font-light">Going it alone? We help you prepare court-ready documents, organize your arguments, and understand filing procedures so you can present your case with confidence.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Court document preparation</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Filing guidance & procedure support</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Professional correspondence drafting</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- For Legal Professionals -->
-                    <div class="bg-white rounded-2xl p-10 border border-stone-100 shadow-sm">
-                        <div class="flex items-center space-x-4 mb-6">
-                            <svg class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                            <h3 class="text-2xl font-bold text-deep-green">For Legal Professionals</h3>
-                        </div>
-                        <p class="text-stone-600 mb-8 font-light">Streamline your workflow with our document drafting, transcription, and file management support — so you can focus on your clients.</p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Document drafting & formatting</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Transcription & file management</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-3">—</span><span class="text-stone-700">Legal research & organization</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mt-12 text-center">
-                    <div class="inline-flex items-center px-6 py-2 bg-white border border-gold/30 rounded-full text-stone-500 text-sm italic">
-                        ✨ Notary Services — Coming Soon ✨
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Career & HR Solutions Section -->
-        <section id="career" class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="section-tag">Career Services</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Career & HR Solutions</h2>
-                    <p class="text-stone-600 max-w-2xl mx-auto text-lg font-light leading-relaxed">
-                        AI-enhanced resume rewrites, LinkedIn optimization, and career coaching — delivered in under 4 hours.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Resume -->
-                    <div class="product-card flex flex-col p-8">
-                        <div class="flex justify-center mb-6">
-                            <svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-center text-deep-green mb-2">Resume + Cover Letter</h3>
-                        <p class="text-3xl font-bold text-center text-deep-green mb-6">$79</p>
-                        <p class="text-stone-600 text-sm text-center mb-8 flex-grow">ATS-optimized resume with custom cover letter. Delivered in 4 hours.</p>
-                        <a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="btn-primary w-full">Order Now</a>
-                    </div>
-
-                    <!-- Bundle -->
-                    <div class="product-card featured flex flex-col p-8 bg-stone-50">
-                        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-deep-green text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">Popular</div>
-                        <div class="flex justify-center mb-6">
-                            <svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-center text-deep-green mb-2">Career Bundle</h3>
-                        <p class="text-3xl font-bold text-center text-deep-green mb-6">$99</p>
-                        <p class="text-stone-600 text-sm text-center mb-8 flex-grow">Resume + cover letter + LinkedIn profile overhaul for maximum impact.</p>
-                        <a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="btn-primary w-full">Get the Bundle</a>
-                    </div>
-
-                    <!-- LinkedIn -->
-                    <div class="product-card flex flex-col p-8">
-                        <div class="flex justify-center mb-6">
-                            <svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-center text-deep-green mb-2">LinkedIn Profile</h3>
-                        <p class="text-3xl font-bold text-center text-deep-green mb-6">$49</p>
-                        <p class="text-stone-600 text-sm text-center mb-8 flex-grow">Headline, About, and experience rewrite to attract recruiters instantly.</p>
-                        <a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="btn-primary w-full">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Crown Signatures Section -->
-        <section class="py-20 bg-ivory text-center overflow-hidden relative">
-            <div class="max-w-4xl mx-auto px-4 relative z-10">
-                <img src="assets/crown-signature-logo.png" alt="Crown Signature" class="h-20 w-20 mx-auto mb-6">
-                <h2 class="text-4xl md:text-5xl font-bold text-deep-green tracking-widest uppercase mb-4">CROWNED SIGNATURES</h2>
-                <p class="text-stone-500 italic text-lg">A new venture — coming soon. Stay tuned.</p>
-            </div>
-            <!-- Background element -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[200px] font-bold text-stone-200 opacity-[0.1] select-none pointer-events-none whitespace-nowrap">
-                CROWN SIGNATURE
-            </div>
-        </section>
-
-        <!-- Resources & Support (Blog) -->
-        <section id="resources" class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <span class="section-tag">Our Blog</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Resources & Support</h2>
-                    <p class="text-stone-600 max-w-2xl mx-auto font-light">Career advice, legal guides, wellness tips, and more — curated to help you thrive.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Blog 1 -->
-                    <a href="/blog/her-power-pack.html" target="_blank" class="product-card p-8 flex flex-col group">
-                        <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">November 28, 2025</span>
-                        <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Her Power Pack - A Holiday Purse Drive for IPV</h3>
-                        <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Join us in supporting survivors this holiday season through our annual purse drive initiative...</p>
-                        <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                    </a>
-                    <!-- Blog 2 -->
-                    <a href="/blog/overcoming-challenges.html" target="_blank" class="product-card p-8 flex flex-col group border-t-4 border-t-gold">
-                        <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">November 28, 2025</span>
-                        <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Overcoming the Odds</h3>
-                        <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Resilience strategies for navigating complex professional and personal challenges...</p>
-                        <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                    </a>
-                    <!-- Blog 3 -->
-                    <a href="/blog/staying-grounded.html" target="_blank" class="product-card p-8 flex flex-col group">
-                        <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span>
-                        <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">How to Stay Grounded When Life Feels Out of Control</h3>
-                        <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Practical wellness strategies to help you stay calm, centred, and grounded during life's most turbulent seasons...</p>
-                        <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                    </a>
-                </div>
-                
-                <!-- New coaching blog posts row -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <a href="/blog/building-your-village.html" target="_blank" class="product-card p-8 flex flex-col group">
-                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span>
-                    <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Building Your Village: Finding Support Without Losing Yourself</h3>
-                    <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">How to build a meaningful support network that lifts you up without compromising who you are...</p>
-                    <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                </a>
-                <a href="/blog/power-of-documenting.html" target="_blank" class="product-card p-8 flex flex-col group border-t-4 border-t-gold">
-                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span>
-                    <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">The Power of Documenting Your Journey</h3>
-                    <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Why writing things down — your thoughts, your growth, your wins — is one of the most powerful acts of self-care...</p>
-                    <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                </a>
-                <a href="/blog/rising-through-uncertainty.html" target="_blank" class="product-card p-8 flex flex-col group">
-                    <span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span>
-                    <h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Rising Through Uncertainty: A Self-Care Guide for Strong Women</h3>
-                    <p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Practical, grounded self-care strategies for women navigating uncertainty with resilience, boundaries, and grace...</p>
-                    <span class="text-deep-green font-bold text-sm">Continue Reading →</span>
-                </a>
-            </div>
-            <div class="mt-12 text-center">
-                <a href="/blog/using-gassho-reiki.html" target="_blank" class="text-stone-400 hover:text-gold transition text-xs font-semibold uppercase tracking-widest">More articles coming weekly — check back for updates.</a>
-            </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="py-24 bg-ivory">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-deep-green mb-4">Frequently Asked Questions</h2>
-                    <div class="gold-divider"></div>
-                </div>
+            <div class="bg-white rounded-3xl p-10 border border-stone-100 shadow-lg">
                 <div class="space-y-6">
-                    <div class="bg-white rounded-xl p-8 shadow-sm">
-                        <h3 class="font-bold text-deep-green mb-3">What forms of payment do you accept?</h3>
-                        <p class="text-stone-600 text-sm leading-relaxed">We accept all major credit cards, debit, e-transfer to samantha.r.russell@outlook.com, cash, and personal checks.</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-8 shadow-sm">
-                        <h3 class="font-bold text-deep-green mb-3">How fast is the resume service?</h3>
-                        <p class="text-stone-600 text-sm leading-relaxed">We deliver your rewritten resume and cover letter within 4 hours of receiving your details and payment.</p>
-                    </div>
-                    <div class="bg-white rounded-xl p-8 shadow-sm">
-                        <h3 class="font-bold text-deep-green mb-3">Do you offer legal advice?</h3>
-                        <p class="text-stone-600 text-sm leading-relaxed">We provide document preparation and guidance for self-represented litigants, not legal representation. For specific legal advice, consult a licensed lawyer.</p>
-                    </div>
+                    <div class="flex items-start gap-4"><div class="bg-gold/10 rounded-full p-3"><svg class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" /></svg></div><div><h3 class="font-bold text-deep-green mb-1">BA Criminology &amp; Justice</h3><p class="text-stone-500 text-sm font-light">Academic grounding in the justice system, giving every document the credibility it deserves.</p></div></div>
+                    <div class="flex items-start gap-4"><div class="bg-gold/10 rounded-full p-3"><svg class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div><div><h3 class="font-bold text-deep-green mb-1">HR &amp; Recruitment Background</h3><p class="text-stone-500 text-sm font-light">Years of hiring-side experience that powers every resume and LinkedIn rewrite.</p></div></div>
+                    <div class="flex items-start gap-4"><div class="bg-gold/10 rounded-full p-3"><svg class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div><div><h3 class="font-bold text-deep-green mb-1">Small Business Owner</h3><p class="text-stone-500 text-sm font-light">Real-world entrepreneurial experience &mdash; I understand what it takes to build something from scratch.</p></div></div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Coaching Resources Section -->
-        <section id="coaching" class="py-24 bg-white text-center">
-            <div class="max-w-4xl mx-auto px-4">
-                <div class="inline-block p-4 bg-stone-50 rounded-full mb-8">
-                    <svg class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <h2 class="text-3xl md:text-5xl font-bold text-deep-green mb-6">Coaching Resources</h2>
-                <p class="text-stone-600 text-lg md:text-xl font-light mb-10 leading-relaxed">
-                    Empowering resources, wellness guidance, and career insights — published weekly to help you thrive professionally and personally.
-                </p>
-                <a href="/#resources" class="btn-primary px-12 py-4">Read the Blog</a>
-            </div>
-        </section>
-
-        <!-- Wellness Services Section -->
-        <section id="wellness" class="py-16 bg-stone-50 text-center border-y border-stone-100">
-            <div class="max-w-4xl mx-auto px-4">
-                <span class="section-tag mb-4 block">Wellness Services</span>
-                <p class="text-stone-500 italic mb-6">For existing clients</p>
-                <a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" class="text-deep-green font-bold hover:text-gold transition">Book via Private Portal →</a>
-            </div>
-        </section>
-
-        <!-- Contact Form Section -->
-        <section id="contact" class="py-24 bg-white">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-ivory rounded-3xl p-10 md:p-16 border border-stone-100 shadow-xl">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-5xl font-bold text-deep-green mb-4">Connect With Us</h2>
-                        <p class="text-stone-500 font-light">Inquire about services, products, or consulting opportunities.</p>
-                        <p class="text-stone-400 text-sm mt-2 font-medium tracking-wide">samantha.r.russell@outlook.com | 905-244-5513</p>
-                    </div>
-                    
-                    <form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" class="space-y-6">
-                        <input type="hidden" name="_subject" value="New Inquiry - One Stop Therapy Shop">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Full Name</label>
-                                <input type="text" name="name" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="John Doe">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Email Address</label>
-                                <input type="email" name="email" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="john@example.com">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">I'm Interested In</label>
-                            <select name="interest" class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white">
-                                <option value="legal">Legal Document Support</option>
-                                <option value="career">Career & HR Solutions</option>
-                                <option value="coaching">Coaching Resources</option>
-                                <option value="wellness">Wellness Services</option>
-                                <option value="other">Other Inquiry</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Message</label>
-                            <textarea name="message" rows="5" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="How can we assist you today?"></textarea>
-                        </div>
-                        <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-lg shadow-xl">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-deep-green text-white pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                <div class="lg:col-span-2">
-                    <div class="flex items-center space-x-3 mb-6">
-                        <img src="assets/crown-signature-logo.png" alt="Crown Signature Logo Small" class="h-8 w-8 brightness-0 invert opacity-80">
-                        <span class="text-xl font-bold tracking-tight">One Stop <span class="text-gold italic">Therapy Shop</span></span>
-                    </div>
-                    <p class="text-stone-400 text-sm max-w-sm mb-6 leading-relaxed">
-                        Holistic Excellence in Wellness & Professional Identity. Serving the Greater Toronto Area with premium legal, career, and coaching solutions.
-                    </p>
-                    <p class="text-stone-400 text-sm">samantha.r.russell@outlook.com</p>
-                    <p class="text-stone-400 text-sm">905-244-5513</p>
-                    <div class="flex space-x-4 mt-6">
-                        <a href="#" aria-label="Facebook" class="text-stone-400 hover:text-gold transition"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                        <a href="#" aria-label="Instagram" class="text-stone-400 hover:text-gold transition"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.981 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                        <a href="#" aria-label="LinkedIn" class="text-stone-400 hover:text-gold transition"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-gold font-bold text-xs uppercase tracking-[3px] mb-6">Quick Links</h4>
-                    <ul class="space-y-4">
-                        <li><a href="#legal" class="text-stone-400 hover:text-gold transition text-sm">Legal Support</a></li>
-                        <li><a href="#career" class="text-stone-400 hover:text-gold transition text-sm">Career Services</a></li>
-                        <li><a href="#resources" class="text-stone-400 hover:text-gold transition text-sm">Resources & Blog</a></li>
-                        <li><a href="#contact" class="text-stone-400 hover:text-gold transition text-sm">Order Career Services</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-gold font-bold text-xs uppercase tracking-[3px] mb-6">Company</h4>
-                    <ul class="space-y-4">
-                        <li><a href="#wellness" class="text-stone-400 hover:text-gold transition text-sm">Wellness Portal</a></li>
-                        <li><a href="#" class="text-stone-400 hover:text-gold transition text-sm">Privacy Policy</a></li>
-                        <li><a href="#" class="text-stone-400 hover:text-gold transition text-sm">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-white/10 pt-10 text-center">
-                <p class="text-stone-500 text-xs">Copyright © 2026 One Stop Therapy Shop. All rights reserved.</p>
-                <p class="text-stone-600 text-[10px] mt-2 tracking-widest uppercase">Serving the Greater Toronto Area</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        // Mobile Menu Toggle
-        const btn = document.getElementById('mobile-menu-button');
-        const menu = document.getElementById('mobile-menu');
+<!-- Legal Document Support Section -->
+<section id="legal" class="py-24 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-tag">Practice Areas</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Legal Document Support</h2>
+            <p class="text-stone-600 max-w-2xl mx-auto text-lg font-light leading-relaxed">Professional document preparation and support for individuals and legal professionals navigating the justice system.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-2xl p-10 border border-stone-100 shadow-sm">
+                <div class="flex items-center space-x-4 mb-6">
+                    <svg class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+                    <h3 class="text-2xl font-bold text-deep-green">For Self Represented Litigants</h3>
+                </div>
+                <p class="text-stone-600 mb-8 font-light">Going it alone? We help you prepare court-ready documents, organize your arguments, and understand filing procedures so you can present your case with confidence.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Court document preparation</span></li>
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Filing guidance &amp; procedure support</span></li>
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Professional correspondence drafting</span></li>
+                </ul>
+            </div>
+            <div class="bg-white rounded-2xl p-10 border border-stone-100 shadow-sm">
+                <div class="flex items-center space-x-4 mb-6">
+                    <svg class="h-10 w-10 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    <h3 class="text-2xl font-bold text-deep-green">For Legal Professionals</h3>
+                </div>
+                <p class="text-stone-600 mb-8 font-light">Streamline your workflow with our document drafting, transcription, and file management support &mdash; so you can focus on your clients.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Document drafting &amp; formatting</span></li>
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Transcription &amp; file management</span></li>
+                    <li class="flex items-start"><span class="text-gold mr-3">&mdash;</span><span class="text-stone-700">Legal research &amp; organization</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-12 text-center">
+            <div class="inline-flex items-center px-6 py-2 bg-white border border-gold/30 rounded-full text-stone-500 text-sm italic">&starf; Notary Services &mdash; Coming Soon &starf;</div>
+        </div>
+    </div>
+</section>
 
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+<!-- Career & HR Solutions Section -->
+<section id="career" class="py-24 bg-ivory border-t border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-tag">Career Services</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Career &amp; HR Solutions</h2>
+            <p class="text-stone-600 max-w-2xl mx-auto text-lg font-light leading-relaxed">AI-enhanced resume rewrites, LinkedIn optimization, and career coaching &mdash; delivered in under 4 hours.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="product-card flex flex-col p-8">
+                <div class="flex justify-center mb-6"><svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg></div>
+                <h3 class="text-xl font-bold text-center text-deep-green mb-2">Resume + Cover Letter</h3>
+                <p class="text-3xl font-bold text-center text-deep-green mb-6">$79</p>
+                <p class="text-stone-600 text-sm text-center mb-8 flex-grow">ATS-optimized resume with custom cover letter. Delivered in 4 hours.</p>
+                <a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="btn-primary w-full">Order Now</a>
+            </div>
+            <div class="product-card featured flex flex-col p-8 bg-stone-50">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-deep-green text-white text-[10px] font-bold px-4 py-1 rounded-full uppercase tracking-widest">Popular</div>
+                <div class="flex justify-center mb-6"><svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg></div>
+                <h3 class="text-xl font-bold text-center text-deep-green mb-2">Career Bundle</h3>
+                <p class="text-3xl font-bold text-center text-deep-green mb-6">$99</p>
+                <p class="text-stone-600 text-sm text-center mb-8 flex-grow">Resume + cover letter + LinkedIn profile overhaul for maximum impact.</p>
+                <a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="btn-primary w-full">Get the Bundle</a>
+            </div>
+            <div class="product-card flex flex-col p-8">
+                <div class="flex justify-center mb-6"><svg class="h-12 w-12 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" /></svg></div>
+                <h3 class="text-xl font-bold text-center text-deep-green mb-2">LinkedIn Profile</h3>
+                <p class="text-3xl font-bold text-center text-deep-green mb-6">$49</p>
+                <p class="text-stone-600 text-sm text-center mb-8 flex-grow">Headline, About, and experience rewrite to attract recruiters instantly.</p>
+                <a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="btn-primary w-full">Order Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mid-Page CTA Strip -->
+<section class="py-16 bg-deep-green text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to take the next step?</h2>
+        <p class="text-stone-300 font-light mb-8 text-lg">Whether you need legal document support or a career makeover &mdash; Samantha is here to help.</p>
+        <a href="#contact" class="inline-block bg-gold text-deep-green font-bold px-10 py-4 rounded-xl hover:bg-yellow-400 transition shadow-lg">Get in Touch Today</a>
+    </div>
+</section>
+
+<!-- Resources & Support (Blog) -->
+<section id="resources" class="py-24 bg-white border-t border-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-tag">Our Blog</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-deep-green mt-3 mb-4">Resources &amp; Support</h2>
+            <p class="text-stone-600 max-w-2xl mx-auto font-light">Career advice, legal guides, wellness tips, and more &mdash; curated to help you thrive.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a href="/blog/her-power-pack.html" target="_blank" class="product-card p-8 flex flex-col group"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">November 28, 2025</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Her Power Pack - A Holiday Purse Drive for IPV</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Join us in supporting survivors this holiday season through our annual purse drive initiative...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+            <a href="/blog/overcoming-challenges.html" target="_blank" class="product-card p-8 flex flex-col group border-t-4 border-t-gold"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">November 28, 2025</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Overcoming the Odds</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Resilience strategies for navigating complex professional and personal challenges...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+            <a href="/blog/staying-grounded.html" target="_blank" class="product-card p-8 flex flex-col group"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">How to Stay Grounded When Life Feels Out of Control</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Practical wellness strategies to help you stay calm, centred, and grounded during life's most turbulent seasons...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+        </div>
+        <!-- Coaching & Wellness Resources sub-section -->
+        <div class="mt-12 mb-8 text-center">
+            <span class="section-tag">Coaching &amp; Wellness Resources</span>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <a href="/blog/building-your-village.html" target="_blank" class="product-card p-8 flex flex-col group"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Building Your Village: Finding Support Without Losing Yourself</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">How to build a meaningful support network that lifts you up without compromising who you are...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+            <a href="/blog/power-of-documenting.html" target="_blank" class="product-card p-8 flex flex-col group border-t-4 border-t-gold"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">The Power of Documenting Your Journey</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Why writing things down &mdash; your thoughts, your growth, your wins &mdash; is one of the most powerful acts of self-care...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+            <a href="/blog/rising-through-uncertainty.html" target="_blank" class="product-card p-8 flex flex-col group"><span class="text-gold text-[10px] font-bold uppercase tracking-widest mb-4">June 2026</span><h3 class="text-xl font-bold text-deep-green mb-4 group-hover:text-gold transition">Rising Through Uncertainty: A Self-Care Guide for Strong Women</h3><p class="text-stone-500 text-sm mb-6 flex-grow leading-relaxed">Practical, grounded self-care strategies for women navigating uncertainty with resilience, boundaries, and grace...</p><span class="text-deep-green font-bold text-sm">Continue Reading &rarr;</span></a>
+        </div>
+        <div class="mt-12 text-center"><span class="text-stone-400 text-xs font-semibold uppercase tracking-widest">More articles coming weekly &mdash; check back for updates.</span></div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-24 bg-ivory border-t border-stone-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="section-tag">FAQ</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-deep-green mt-3 mb-4">Frequently Asked Questions</h2>
+            <div class="gold-divider"></div>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h3 class="font-bold text-deep-green mb-3">What forms of payment do you accept?</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">We accept all major credit cards, debit, e-transfer to onestoptherapyshop@gmail.com, cash, and personal checks.</p>
+            </div>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h3 class="font-bold text-deep-green mb-3">How fast is the resume service?</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">We deliver your rewritten resume and cover letter within 4 hours of receiving your details and payment.</p>
+            </div>
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+                <h3 class="font-bold text-deep-green mb-3">Do you offer legal advice?</h3>
+                <p class="text-stone-600 text-sm leading-relaxed">We provide document preparation and guidance for self-represented litigants, not legal representation. For specific legal advice, consult a licensed lawyer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Wellness Services Section -->
+<section id="wellness" class="py-24 bg-white border-t border-stone-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+        <span class="section-tag mb-4 block">Wellness Services</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-deep-green mt-3 mb-4">Holistic Wellness Support</h2>
+        <div class="gold-divider"></div>
+        <p class="text-stone-600 text-lg font-light mb-8 max-w-xl mx-auto">Wellness sessions are available for existing clients through our private booking portal. Personalised, private, and professional.</p>
+        <a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&amp;cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" class="btn-primary px-10 py-4">Book via Private Portal &rarr;</a>
+        <p class="text-stone-400 text-sm mt-6 italic">For existing clients only</p>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-24 bg-ivory border-t border-stone-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl p-10 md:p-16 border border-stone-100 shadow-xl">
+            <div class="text-center mb-12">
+                <span class="section-tag mb-4 block">Get In Touch</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-deep-green mb-4">Connect With Us</h2>
+                <p class="text-stone-500 font-light">Inquire about services, products, or consulting opportunities.</p>
+                <p class="text-stone-400 text-sm mt-2 font-medium tracking-wide">onestoptherapyshop@gmail.com | 905-244-5513</p>
+            </div>
+            <form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" class="space-y-6">
+                <input type="hidden" name="_subject" value="New Inquiry - One Stop Therapy Shop">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Full Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="Your full name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Email Address</label>
+                        <input type="email" name="email" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="your@email.com">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">I'm Interested In</label>
+                    <select name="interest" class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white">
+                        <option value="legal">Legal Document Support</option>
+                        <option value="career">Career &amp; HR Solutions</option>
+                        <option value="coaching">Coaching Resources</option>
+                        <option value="wellness">Wellness Services</option>
+                        <option value="other">Other Inquiry</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-deep-green uppercase tracking-widest mb-2">Message</label>
+                    <textarea name="message" rows="5" required class="w-full px-4 py-4 rounded-xl border border-stone-200 focus:border-gold outline-none transition bg-white" placeholder="How can we assist you today?"></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary py-5 rounded-2xl text-lg shadow-xl">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-deep-green text-white pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="lg:col-span-2">
+                <div class="flex items-center space-x-3 mb-6">
+                    <img src="assets/crown-signature-logo.png" alt="Crown Signature Logo Small" class="h-8 w-8 brightness-0 invert opacity-80">
+                    <span class="text-xl font-bold tracking-tight">One Stop <span class="text-gold italic">Therapy Shop</span></span>
+                </div>
+                <p class="text-stone-400 text-sm max-w-sm mb-6 leading-relaxed">Holistic Excellence in Wellness &amp; Professional Identity. Serving the Greater Toronto Area with premium legal, career, and coaching solutions.</p>
+                <p class="text-stone-400 text-sm">onestoptherapyshop@gmail.com</p>
+                <p class="text-stone-400 text-sm">905-244-5513</p>
+                <!-- Crowned Signatures subtle brand nod -->
+                <div class="mt-8 pt-6 border-t border-white/10">
+                    <p class="text-stone-500 text-xs uppercase tracking-widest font-semibold mb-1">A Crown Signature Brand</p>
+                    <p class="text-stone-600 text-xs italic">Crowned Signatures &mdash; coming soon</p>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-gold font-bold text-xs uppercase tracking-[3px] mb-6">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="#about" class="text-stone-400 hover:text-gold transition text-sm">About Samantha</a></li>
+                    <li><a href="#legal" class="text-stone-400 hover:text-gold transition text-sm">Legal Support</a></li>
+                    <li><a href="#career" class="text-stone-400 hover:text-gold transition text-sm">Career Services</a></li>
+                    <li><a href="#resources" class="text-stone-400 hover:text-gold transition text-sm">Resources &amp; Blog</a></li>
+                    <li><a href="#contact" class="text-stone-400 hover:text-gold transition text-sm">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gold font-bold text-xs uppercase tracking-[3px] mb-6">Company</h4>
+                <ul class="space-y-4">
+                    <li><a href="#wellness" class="text-stone-400 hover:text-gold transition text-sm">Wellness Portal</a></li>
+                    <li><a href="#" class="text-stone-400 hover:text-gold transition text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="text-stone-400 hover:text-gold transition text-sm">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-10 text-center">
+            <p class="text-stone-500 text-xs">Copyright &copy; 2026 One Stop Therapy Shop. All rights reserved.</p>
+            <p class="text-stone-600 text-[10px] mt-2 tracking-widest uppercase">Serving the Greater Toronto Area</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            e.preventDefault();
+            const target = document.querySelector(targetId);
+            if (target) { target.scrollIntoView({ behavior: 'smooth' }); }
+            if (!menu.classList.contains('hidden')) { menu.classList.add('hidden'); }
         });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                e.preventDefault();
-                const target = document.querySelector(targetId);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-                // Close mobile menu if open
-                if (!menu.classList.contains('hidden')) {
-                    menu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
