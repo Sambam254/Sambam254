@@ -1,140 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerBoost | Order</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Stop Therapy Shop | Order Career Services</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1a3c2e',gold:'#c9a84c'}}}}</script>
+<style>
+body{font-family:'Georgia',serif;background:#f9f7f4}
+.card{background:white;border-radius:1.5rem;box-shadow:0 4px 24px rgba(0,0,0,0.07);border:1px solid #ede9e3}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#c9a84c;box-shadow:0 0 0 3px rgba(201,168,76,0.15)}
+.btn-primary{background:#1a3c2e;color:white;transition:background 0.2s}
+.btn-primary:hover{background:#c9a84c}
+.pkg-btn{border:2px solid #1a3c2e;color:#1a3c2e;transition:all 0.2s;display:flex;align-items:center;justify-content:space-between;width:100%;padding:1rem 1.5rem;border-radius:0.75rem;font-weight:700;font-size:1.1rem;margin-bottom:0.75rem;text-decoration:none}
+.pkg-btn:hover{background:#1a3c2e;color:white}
+.pkg-btn.featured{background:#1a3c2e;color:white}
+.pkg-btn.featured:hover{background:#c9a84c;border-color:#c9a84c}
+.upload-zone{border:2px dashed #c9a84c;background:#fffdf7;border-radius:1rem;cursor:pointer;transition:background 0.2s}
+.upload-zone:hover{background:#fff8e7}
+.fl{display:block;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;margin-bottom:0.4rem}
+.fi{width:100%;padding:0.75rem 1rem;border-radius:0.75rem;border:1px solid #e5e7eb;color:#1f2937;transition:border 0.2s}
+</style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
-    <div class="container mx-auto px-6 py-12 max-w-3xl">
-        <h1 class="text-3xl font-bold text-center mb-4">Complete Your Order</h1>
-        <p class="text-gray-600 text-center mb-12">Step 1: Pay → Step 2: Fill Form</p>
-
-        <!-- STEP 1: Choose & Pay -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 mb-8">
-            <h2 class="text-2xl font-bold mb-2">1. Choose Your Package & Pay</h2>
-            <p class="text-gray-500 mb-6">Click your package to pay via PayPal:</p>
-
-            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="block w-full bg-white border-2 border-blue-600 text-blue-600 py-4 px-6 rounded-xl font-bold hover:bg-blue-50 transition flex items-center justify-between mb-3">
-                <span>📄 Resume + Cover Letter</span>
-                <span class="text-2xl">$79</span>
-            </a>
-            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="block w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-between shadow-lg mb-3">
-                <span>⭐ Career Bundle (Best Value)</span>
-                <span class="text-2xl">$99</span>
-            </a>
-            <a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="block w-full bg-white border-2 border-gray-300 py-4 px-6 rounded-xl font-bold hover:bg-gray-50 transition flex items-center justify-between">
-                <span>🔗 LinkedIn Only</span>
-                <span class="text-2xl">$49</span>
-            </a>
-        </div>
-
-        <!-- STEP 2: Form -->
-        <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
-            <h2 class="text-2xl font-bold mb-6">2. Submit Your Details</h2>
-
-            <form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" class="space-y-6">
-                <input type="hidden" name="_subject" value="New CareerBoost Order!">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://sambam254.github.io/Sambam254/order-flow/confirmation.html">
-
-                <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-3 rounded-xl border border-gray-200">
-                <input type="email" name="email" required placeholder="Email Address" class="w-full px-4 py-3 rounded-xl border border-gray-200">
-                <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200">
-                    <option value="">Select Package</option>
-                    <option value="resume">Resume + Cover Letter ($79)</option>
-                    <option value="bundle">Career Bundle ($99)</option>
-                    <option value="linkedin">LinkedIn Only ($49)</option>
-                </select>
-                <input type="text" name="target_job" required placeholder="Target Job Title" class="w-full px-4 py-3 rounded-xl border border-gray-200">
-                <textarea name="resume_link" required placeholder="LinkedIn URL or Resume Link" class="w-full px-4 py-3 rounded-xl border border-gray-200 h-24"></textarea>
-                
-                <div class="bg-green-50 p-4 rounded-xl border border-green-200 flex items-start gap-3">
-                    <input type="checkbox" name="payment_confirmed" required class="mt-1 w-5 h-5">
-                    <p class="text-sm">✅ I have paid via PayPal in Step 1</p>
-                </div>
-
-                <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg">
-                    Submit Order →
-                </button>
-            </form>
-        </div>
-    </div>
+<body class="min-h-screen py-12 px-4">
+<div class="max-w-2xl mx-auto">
+<div class="text-center mb-10">
+<p class="text-sm uppercase tracking-widest text-gray-400 mb-1">One Stop Therapy Shop</p>
+<h1 class="text-4xl font-bold mb-2" style="color:#1a3c2e">Order Career Services</h1>
+<p class="text-gray-500">Step 1: Choose and Pay - Step 2: Submit Your Details</p>
+</div>
+<div class="card p-8 mb-8">
+<h2 class="text-xl font-bold mb-1" style="color:#1a3c2e">1. Choose Your Package and Pay</h2>
+<p class="text-gray-400 text-sm mb-6">Click your package to pay securely via PayPal.</p>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="pkg-btn"><span>Resume + Cover Letter</span><span>$79</span></a>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="pkg-btn featured"><span>Career Bundle (Best Value)</span><span>$99</span></a>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="pkg-btn"><span>LinkedIn Overhaul Only</span><span>$49</span></a>
+</div>
+<div class="card p-8">
+<h2 class="text-xl font-bold mb-1" style="color:#1a3c2e">2. Submit Your Details</h2>
+<p class="text-gray-400 text-sm mb-8">Fill this out after paying. The more detail you give, the better your results.</p>
+<form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" enctype="multipart/form-data" class="space-y-6">
+<input type="hidden" name="_subject" value="New Career Service Order - One Stop Therapy Shop">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://onestoptherapyshop.com/order-flow/confirmation.html">
+<input type="hidden" name="_template" value="table">
+<div><label class="fl">Full Name</label><input type="text" name="name" required placeholder="Jane Smith" class="fi"></div>
+<div><label class="fl">Email Address</label><input type="email" name="email" required placeholder="jane@email.com" class="fi"></div>
+<div><label class="fl">Phone (optional)</label><input type="tel" name="phone" placeholder="+1 (905) 000-0000" class="fi"></div>
+<div><label class="fl">Package Purchased</label>
+<select name="service" required class="fi" style="background:white">
+<option value="">Select your package...</option>
+<option value="Resume + Cover Letter ($79)">Resume + Cover Letter ($79)</option>
+<option value="Career Bundle ($99)">Career Bundle - Resume + Cover Letter + LinkedIn ($99)</option>
+<option value="LinkedIn Only ($49)">LinkedIn Overhaul Only ($49)</option>
+</select></div>
+<div><label class="fl">Target Job Title / Industry</label><input type="text" name="target_job" required placeholder="e.g. Senior Project Manager, Healthcare" class="fi"></div>
+<div>
+<label class="fl">Upload Your Current Resume (PDF or Word)</label>
+<label class="upload-zone flex flex-col items-center justify-center py-8 px-4 w-full">
+<i class="fas fa-cloud-upload-alt text-3xl mb-3" style="color:#c9a84c"></i>
+<p class="font-semibold text-gray-700">Click to upload or drag and drop</p>
+<p class="text-xs text-gray-400 mt-1">PDF, DOC, DOCX - max 10MB</p>
+<input type="file" name="resume_file" accept=".pdf,.doc,.docx" style="display:none" id="resumeUpload" onchange="document.getElementById('fileName').textContent=this.files[0]?.name||''">
+<p id="fileName" class="text-sm mt-2 font-semibold" style="color:#16a34a"></p>
+</label>
+<p class="text-xs text-gray-400 mt-2">No file? Paste your LinkedIn URL in the notes field below.</p>
+</div>
+<div><label class="fl">Dream Job Posting Link (recommended)</label><input type="url" name="dream_job_link" placeholder="https://www.indeed.com/viewjob?..." class="fi"></div>
+<div><label class="fl">3-5 Key Achievements (with numbers if possible)</label><textarea name="achievements" required placeholder="e.g. Managed a team of 12, reduced costs by 30%, launched product used by 5,000+ users..." class="fi" style="height:7rem"></textarea></div>
+<div><label class="fl">Top 5 Hard Skills</label><input type="text" name="top_skills" required placeholder="e.g. Project Management, SQL, Salesforce, Budget Forecasting, Agile" class="fi"></div>
+<div><label class="fl">Your Professional Superpower</label><input type="text" name="superpower" required placeholder="e.g. I turn chaotic projects into smooth launches" class="fi"></div>
+<div><label class="fl">Preferred Tone</label>
+<select name="tone" required class="fi" style="background:white">
+<option value="">Select a tone...</option>
+<option value="Formal">Formal - Traditional, polished, corporate</option>
+<option value="Modern">Modern - Clean, confident, straightforward</option>
+<option value="Creative">Creative - Bold, expressive, personality-forward</option>
+</select></div>
+<div><label class="fl">Anything Else We Should Know? (optional)</label><textarea name="notes" placeholder="LinkedIn URL if no file, career gaps, career change context, etc." class="fi" style="height:6rem"></textarea></div>
+<div class="flex items-start gap-3 p-4 rounded-xl" style="background:#f0fdf4;border:1px solid #bbf7d0">
+<input type="checkbox" name="payment_confirmed" required class="mt-1 w-5 h-5" style="accent-color:#16a34a">
+<p class="text-sm text-gray-700">I confirm I have completed payment via PayPal in Step 1.</p>
+</div>
+<button type="submit" class="btn-primary w-full py-4 rounded-xl font-bold text-lg shadow-md">Submit My Order</button>
+<p class="text-center text-xs text-gray-400">You will receive a confirmation email within minutes. Completed documents delivered within 4 hours.</p>
+</form>
+</div>
+<p class="text-center text-xs text-gray-400 mt-8">2026 One Stop Therapy Shop. All rights reserved.</p>
+</div>
 </body>
-</html>
-            <div class="flex items-center gap-4 mb-6">
-                <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
-                <h2 class="text-2xl font-bold">Your Career Details</h2>
-            </div>
-
-            <form id="orderForm" action="https://formsubmit.co/careerboost.service@gmail.com" method="POST" class="space-y-6">
-                <!-- FormSubmit Configuration -->
-                <input type="hidden" name="_next" id="nextField" value="">
-                <input type="hidden" name="_subject" value="New CareerBoost Order!">
-                <input type="hidden" name="_captcha" value="false">
-
-                <script>
-                    document.getElementById('nextField').value = window.location.href.replace('order.html', 'confirmation.html');
-                </script>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Full Name</label>
-                    <input type="text" name="name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Email Address</label>
-                    <input type="email" name="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Phone Number (Optional)</label>
-                    <input type="tel" name="phone" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Service Selection</label>
-                    <select name="service" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
-                        <option value="">Select a package...</option>
-                        <option value="resume">Resume Rewrite + Cover Letter ($79)</option>
-                        <option value="bundle">The Career Bundle ($99)</option>
-                        <option value="linkedin">LinkedIn Profile Optimization ($49)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Target Job Title</label>
-                    <input type="text" name="target_job" required placeholder="Senior Product Manager" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Current Resume / LinkedIn URL</label>
-                    <textarea name="resume_link" required placeholder="Paste your LinkedIn URL or a link to your current resume (Google Drive/Dropbox)..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition h-32"></textarea>
-                    <p class="text-xs text-gray-400 mt-2 italic">Since we don't support direct uploads here, please provide a link to your document.</p>
-                </div>
-
-                <div>
-                    <label class="block text-sm font-bold mb-2 uppercase tracking-wide text-gray-500">Key Achievements / Notes</label>
-                    <textarea name="notes" placeholder="Anything specific you want us to highlight?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-blue-100 outline-none transition h-24"></textarea>
-                </div>
-
-                <div class="flex items-start gap-3">
-                    <input type="checkbox" name="payment_confirmed" required class="mt-1 w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary">
-                    <p class="text-sm text-gray-600">I understand that I will receive a payment link via email to finalize my order.</p>
-                </div>
-
-                <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">
-                    Submit My Details
-                </button>
-            </form>
-        </div>
-
-        <div class="mt-12 text-center text-gray-400 text-sm">
-            &copy; 2026 CareerBoost. All rights reserved.
-        </div>
-    </div>
-
-</body>
-</html>
+    </html>
