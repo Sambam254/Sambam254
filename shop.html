@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Legal and Career Templates | One Stop Therapy Shop</title>
+  <meta name="description" content="Download professional legal document templates and career resources. Flat-rate, instant download. Trusted by self-represented litigants and job seekers across Ontario." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .text-gold { color: #B8960C; }
+    .bg-gold { background-color: #B8960C; }
+    .bg-navy { background-color: #1B2A4A; }
+    .text-navy { color: #1B2A4A; }
+    .gold-divider { width: 48px; height: 3px; background: #B8960C; margin: 12px auto; border-radius: 2px; }
+    .product-card { transition: transform 0.2s, box-shadow 0.2s; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+    .badge { display: inline-block; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 99px; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/"><img src="/OSTS Logo.png" alt="One Stop Therapy Shop" class="h-12 w-12 object-contain" /></a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/about.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">About</a>
+        <a href="/career.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Career</a>
+        <a href="/legal.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Legal</a>
+        <a href="/legal-resources.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Legal Hub</a>
+        <a href="/career-resources.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Resources</a>
+        <a href="/shop.html" class="text-gold font-semibold transition text-sm tracking-wide uppercase whitespace-nowrap">Shop</a>
+        <a href="/safeground.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">SafeGround</a>
+      </div>
+      <a href="/#contact" class="bg-navy text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition">Book Free Consultation</a>
+    </div>
+  </nav>
+  <section class="bg-navy text-white py-16 px-6 text-center">
+    <p class="text-gold text-xs font-bold tracking-widest uppercase mb-3">Instant Download - Flat-Rate - No Subscription</p>
+    <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-4">Templates That Do the Heavy Lifting</h1>
+    <p class="text-stone-300 text-lg max-w-2xl mx-auto">Professional legal documents and career resources created by an HR expert and Commissioner for Taking Affidavits. Buy once, use immediately.</p>
+    <div class="gold-divider mx-auto mt-6"></div>
+  </section>
+  <div class="max-w-6xl mx-auto px-6 pt-10">
+    <div class="flex flex-wrap gap-3 justify-center mb-10">
+      <button onclick="filterProducts('all')" id="tab-all" class="tab-btn bg-navy text-white text-sm font-semibold px-5 py-2 rounded-full transition">All Products</button>
+      <button onclick="filterProducts('legal')" id="tab-legal" class="tab-btn bg-white text-stone-600 border border-stone-300 text-sm font-semibold px-5 py-2 rounded-full transition">Legal Documents</button>
+      <button onclick="filterProducts('career')" id="tab-career" class="tab-btn bg-white text-stone-600 border border-stone-300 text-sm font-semibold px-5 py-2 rounded-full transition">Career and Resume</button>
+      <button onclick="filterProducts('bundle')" id="tab-bundle" class="tab-btn bg-white text-stone-600 border border-stone-300 text-sm font-semibold px-5 py-2 rounded-full transition">Bundles</button>
+      <button onclick="filterProducts('hr')" id="tab-hr" class="tab-btn bg-white text-stone-600 border border-stone-300 text-sm font-semibold px-5 py-2 rounded-full transition">HR Resources</button>
+    </div>
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">General Affidavit Template</h3><p class="text-stone-500 text-sm mb-4">Professionally formatted affidavit for Ontario courts. Fill in your details, no lawyer required. Includes formatting guide.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$17</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Demand Letter Template</h3><p class="text-stone-500 text-sm mb-4">Professional demand letter for money owed, property disputes, or contract breaches. Customizable for any situation in Ontario.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$17</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Statutory Declaration Template</h3><p class="text-stone-500 text-sm mb-4">Formatted for Canadian federal and provincial requirements. Includes instructions for signing before a Commissioner.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$17</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Workplace Complaint Letter</h3><p class="text-stone-500 text-sm mb-4">Formal complaint letter for HR departments or the Ontario Labour Relations Board. Protect your rights in writing.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$22</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Response to Motion Template</h3><p class="text-stone-500 text-sm mb-4">Know exactly how to respond when served. Ontario Family Court format. Includes filing checklist and step-by-step guide.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$37</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="legal"><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-navy text-white mb-3">Legal</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Employment Termination Letter</h3><p class="text-stone-500 text-sm mb-4">Ontario ESA compliant. For small business owners and managers. Includes notice period guide and checklist.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$27</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="career"><div class="bg-gold h-3"></div><div class="p-6"><span class="badge bg-gold text-white mb-3">Career</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">ATS Resume Template</h3><p class="text-stone-500 text-sm mb-4">Beat the bots. Clean ATS-optimized single-page Canva resume template, editable in minutes. Designed by a recruiter.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$15</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="career"><div class="bg-gold h-3"></div><div class="p-6"><span class="badge bg-gold text-white mb-3">Career</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Cover Letter Template Pack</h3><p class="text-stone-500 text-sm mb-4">3 cover letter templates: general application, career change, and overqualified candidate. Plug-and-play format.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$12</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="career"><div class="bg-gold h-3"></div><div class="p-6"><span class="badge bg-gold text-white mb-3">Career</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">LinkedIn Profile Checklist</h3><p class="text-stone-500 text-sm mb-4">The recruiter insider checklist for a profile that gets noticed. 25-point audit to complete in one afternoon.</p><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$9</span><span class="text-stone-400 text-sm ml-1">CAD</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border-2 border-gold overflow-hidden relative" data-cat="bundle"><div class="absolute top-4 right-4 badge bg-gold text-white">Best Value</div><div class="bg-gold h-3"></div><div class="p-6"><span class="badge bg-stone-800 text-white mb-3">Bundle</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Job Ready Kit</h3><ul class="text-xs text-stone-500 space-y-1 mb-4"><li>ATS Resume Template</li><li>3 Cover Letter Templates</li><li>LinkedIn Checklist</li><li>30-Day Job Search Tracker</li></ul><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$37</span><span class="text-stone-400 text-xs ml-1 line-through">$49</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border-2 border-navy overflow-hidden relative" data-cat="bundle"><div class="absolute top-4 right-4 badge bg-navy text-white">Most Popular</div><div class="bg-navy h-3"></div><div class="p-6"><span class="badge bg-stone-800 text-white mb-3">Bundle</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Legal Starter Pack</h3><ul class="text-xs text-stone-500 space-y-1 mb-4"><li>Affidavit Template</li><li>Demand Letter</li><li>Statutory Declaration</li><li>Workplace Complaint Letter</li></ul><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$57</span><span class="text-stone-400 text-xs ml-1 line-through">$79</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+      <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden" data-cat="hr"><div class="bg-stone-700 h-3"></div><div class="p-6"><span class="badge bg-stone-700 text-white mb-3">HR</span><h3 class="font-playfair text-xl font-bold text-navy mb-2">Small Business HR Toolkit</h3><ul class="text-xs text-stone-500 space-y-1 mb-4"><li>Offer Letter Template</li><li>Onboarding Checklist</li><li>Performance Review Template</li><li>Termination Letter and Notice Guide</li><li>Employee Warning Letter</li></ul><div class="flex items-center justify-between"><div><span class="text-2xl font-bold text-navy">$97</span><span class="text-stone-400 text-xs ml-1 line-through">$147</span></div><a href="https://onestoptherapyshop.gumroad.com" target="_blank" class="bg-gold text-white text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition">Buy Now</a></div></div></div>
+    </div>
+  </div>
+  <section class="bg-navy text-white py-10 px-6"><div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center"><div><div class="text-gold text-2xl font-bold font-playfair">Instant</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Download</div></div><div><div class="text-gold text-2xl font-bold font-playfair">Ontario</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Compliant</div></div><div><div class="text-gold text-2xl font-bold font-playfair">9+ Yrs</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">HR and Legal Experience</div></div><div><div class="text-gold text-2xl font-bold font-playfair">5 Star</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Client Rated</div></div></div></section>
+  <div class="bg-stone-100 border-t border-stone-200 py-6 px-6 text-center"><p class="text-stone-500 text-xs max-w-2xl mx-auto">These templates are for informational purposes only and do not constitute legal advice. For advice specific to your situation, please consult a licensed legal professional. One Stop Therapy Shop is not a law firm.</p></div>
+  <footer class="bg-navy text-white py-8 px-6 text-center"><p class="text-stone-400 text-sm">2025 One Stop Therapy Shop - Oshawa, ON - onestoptherapyshop@gmail.com</p></footer>
+  <script>
+    function filterProducts(cat) {
+      document.querySelectorAll('#product-grid [data-cat]').forEach(function(card) {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+      });
+      document.querySelectorAll('.tab-btn').forEach(function(btn) {
+        btn.classList.remove('bg-navy','text-white');
+        btn.classList.add('bg-white','text-stone-600','border','border-stone-300');
+      });
+      var a = document.getElementById('tab-'+cat);
+      if(a){a.classList.add('bg-navy','text-white');a.classList.remove('bg-white','text-stone-600','border','border-stone-300');}
+    }
+  </script>
+</body>
+</html>
