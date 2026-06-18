@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /order-flow/
+Disallow: /form-structure.md
 
 Sitemap: https://onestoptherapyshop.com/sitemap.xml
