@@ -23,19 +23,38 @@ body { font-family: 'Inter', sans-serif; }
 </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
-<nav class="bg-white shadow-sm sticky top-0 z-50">
-<div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-<a href="/"><img src="/OSTS Logo.png" alt="One Stop Therapy Shop" class="h-12 w-12 object-contain" /></a>
-<div class="hidden md:flex items-center gap-6">
-<a href="/about.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">About</a>
-<a href="/career.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Career</a>
-<a href="/legal.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Legal</a>
+<nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-stone-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<a href="/"><img src="/assets/osts-circle-logo.png" alt="One Stop Therapy Shop — A Crowned Signature Brand" style="height:72px;width:auto;display:block;" /></a>
+<div class="hidden md:flex items-center gap-3">
+<a href="/#about" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">About</a>
+<a href="/resume-services.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Career</a>
+<a href="/legal-document-support.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">Legal</a>
 <a href="/legal-resources.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Legal Hub</a>
 <a href="/career-resources.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Resources</a>
 <a href="/shop.html" class="text-gold font-semibold transition text-sm tracking-wide uppercase whitespace-nowrap">Shop</a>
 <a href="/safeground.html" class="text-stone-600 hover:text-gold font-medium transition text-sm tracking-wide uppercase">SafeGround</a>
+<a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" style="border:1px solid #d1cec9;color:#9ca3af;padding:0.28rem 0.75rem;border-radius:20px;font-size:0.68rem;font-weight:400;transition:all 0.3s ease;white-space:nowrap;" onmouseover="this.style.borderColor='#1B2A4A';this.style.color='#1B2A4A'" onmouseout="this.style.borderColor='#d1cec9';this.style.color='#9ca3af'">Existing Clients Booking Portal</a>
+<a href="/#contact" class="btn-primary px-6 py-2 text-sm">Book Free Consultation</a>
 </div>
-<a href="/#contact" class="bg-navy text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:opacity-90 transition">Book Free Consultation</a>
+<div class="md:hidden flex items-center">
+<button id="mobile-menu-button" aria-label="Toggle Menu" class="text-navy p-2">
+<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+</button>
+</div>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-stone-100 px-4 py-6 space-y-4">
+<a href="/#about" class="block text-stone-600 py-2 font-medium hover:text-gold transition">About</a>
+<a href="/resume-services.html" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Career</a>
+<a href="/legal-document-support.html" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Legal</a>
+<a href="/legal-resources.html" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Legal Hub</a>
+<a href="/career-resources.html" class="block text-stone-600 py-2 font-medium hover:text-gold transition">Resources</a>
+<a href="/shop.html" class="block text-gold py-2 font-semibold">Shop</a>
+<a href="/safeground.html" class="block text-stone-600 py-2 font-medium hover:text-gold transition">SafeGround</a>
+<a href="/#contact" class="block text-navy py-2 font-bold hover:text-gold transition">Book a Consultation</a>
+<a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" class="block text-stone-500 py-2 text-sm border-t border-stone-100 pt-3 hover:text-gold transition">Existing Clients Booking Portal</a>
 </div>
 </nav>
 
@@ -210,7 +229,7 @@ body { font-family: 'Inter', sans-serif; }
 
 <section class="bg-navy text-white py-10 px-6"><div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center"><div><div class="text-gold text-2xl font-bold font-playfair">Instant</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Download</div></div><div><div class="text-gold text-2xl font-bold font-playfair">Ontario</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Compliant</div></div><div><div class="text-gold text-2xl font-bold font-playfair">9+ Yrs</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">HR and Legal Experience</div></div><div><div class="text-gold text-2xl font-bold font-playfair">5 Star</div><div class="text-stone-300 text-xs uppercase tracking-wide mt-1">Client Rated</div></div></div></section>
 <div class="bg-stone-100 border-t border-stone-200 py-6 px-6 text-center"><p class="text-stone-500 text-xs max-w-2xl mx-auto">These templates are for informational purposes only and do not constitute legal advice. For advice specific to your situation, please consult a licensed legal professional. One Stop Therapy Shop is not a law firm.</p></div>
-<footer class="bg-navy text-white py-8 px-6 text-center"><p class="text-stone-400 text-sm">2025 One Stop Therapy Shop - Oshawa, ON - onestoptherapyshop@gmail.com</p></footer>
+<footer class="bg-navy text-white py-8 px-6 text-center"><p class="text-stone-400 text-sm">2026 One Stop Therapy Shop - Oshawa, ON - onestoptherapyshop@gmail.com</p></footer>
 <script>
 function filterProducts(cat) {
 document.querySelectorAll('#product-grid [data-cat]').forEach(function(card) {
@@ -223,6 +242,11 @@ btn.classList.add('bg-white','text-stone-600','border','border-stone-300');
 var a = document.getElementById('tab-'+cat);
 if(a){a.classList.add('bg-navy','text-white');a.classList.remove('bg-white','text-stone-600','border','border-stone-300');}
 }
+</script>
+<script>
+const mmBtn = document.getElementById('mobile-menu-button');
+const mmMenu = document.getElementById('mobile-menu');
+if (mmBtn) mmBtn.addEventListener('click', () => mmMenu.classList.toggle('hidden'));
 </script>
 </body>
   </html>
