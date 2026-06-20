@@ -38,16 +38,39 @@
   <style>body{font-family:'Inter',sans-serif;background:#FAF7F2;color:#1a1a1a;}h1,h2,h3{font-family:'Playfair Display',serif;}.bg-deep-green{background-color:#0A2E26;}.text-deep-green{color:#0A2E26;}.text-gold{color:#D4AF37;}.section-tag{display:inline-block;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#D4AF37;border:1px solid #D4AF37;padding:4px 12px;border-radius:20px;margin-bottom:1rem;}.card-hover{transition:transform 0.2s ease,box-shadow 0.2s ease;}.card-hover:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1);}</style>
 </head>
 <body>
-<nav class="bg-deep-green px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-  <a href="/"><div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#fff;line-height:1.1;">ONE STOP<br><span style="font-size:0.65rem;letter-spacing:0.18em;color:#D4AF37;">THERAPY SHOP</span></div></a>
-  <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-    <a href="/" class="text-gray-300 hover:text-white transition">Home</a>
-    <a href="/legal-document-support.html" class="text-white font-semibold">Legal Support</a>
-    <a href="/legal-resources.html" class="text-gray-300 hover:text-white transition">Legal Resources</a>
-    <a href="/safeground.html" class="text-gray-300 hover:text-white transition">SafeGround</a>
-    <a href="/career-resources.html" class="text-gray-300 hover:text-white transition">Career Resources</a>
-  </div>
-  <a href="/#contact" class="font-semibold px-5 py-2 rounded-full hover:opacity-90 transition text-sm" style="background-color:#D4AF37;color:#0A2E26;">Book a Consultation</a>
+<nav class="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-stone-100">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<a href="/"><img src="/assets/osts-circle-logo.png" alt="One Stop Therapy Shop — A Crowned Signature Brand" style="height:72px;width:auto;display:block;" /></a>
+<div class="hidden md:flex items-center gap-3">
+<a href="/#about" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase">About</a>
+<a href="/resume-services.html" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase">Career</a>
+<a href="/legal-document-support.html" class="font-semibold transition text-sm tracking-wide uppercase" style="color:#B8960C;">Legal</a>
+<a href="/legal-resources.html" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Legal Hub</a>
+<a href="/career-resources.html" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Resources</a>
+<a href="/shop.html" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase whitespace-nowrap">Shop</a>
+<a href="/safeground.html" class="text-stone-600 hover:text-stone-900 font-medium transition text-sm tracking-wide uppercase">SafeGround</a>
+<a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" style="border:1px solid #d1cec9;color:#9ca3af;padding:0.28rem 0.75rem;border-radius:20px;font-size:0.68rem;font-weight:400;transition:all 0.3s ease;white-space:nowrap;" onmouseover="this.style.borderColor='#1B2A4A';this.style.color='#1B2A4A'" onmouseout="this.style.borderColor='#d1cec9';this.style.color='#9ca3af'">Existing Clients Booking Portal</a>
+<a href="/#contact" style="background:#1B2A4A;color:white;padding:0.5rem 1.25rem;border-radius:8px;font-weight:600;font-size:0.875rem;">Book Free Consultation</a>
+</div>
+<div class="md:hidden flex items-center">
+<button id="mobile-menu-button" aria-label="Toggle Menu" style="color:#1B2A4A;padding:0.5rem;">
+<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+</button>
+</div>
+</div>
+</div>
+<div id="mobile-menu" class="hidden bg-white border-t px-4 py-6 space-y-4" style="border-color:#e7e5e4;">
+<a href="/#about" class="block text-stone-600 py-2 font-medium">About</a>
+<a href="/resume-services.html" class="block text-stone-600 py-2 font-medium">Career</a>
+<a href="/legal-document-support.html" class="block py-2 font-semibold" style="color:#B8960C;">Legal</a>
+<a href="/legal-resources.html" class="block text-stone-600 py-2 font-medium">Legal Hub</a>
+<a href="/career-resources.html" class="block text-stone-600 py-2 font-medium">Resources</a>
+<a href="/shop.html" class="block text-stone-600 py-2 font-medium">Shop</a>
+<a href="/safeground.html" class="block text-stone-600 py-2 font-medium">SafeGround</a>
+<a href="/#contact" class="block py-2 font-bold" style="color:#1B2A4A;">Book a Consultation</a>
+<a href="https://www.fresha.com/a/one-stop-therapy-shop-oshawa-102-ritson-road-south-0re1cnhn/booking?allOffer=true&cartId=3a681492-9a5a-4f8a-a31e-5cae952ed736" target="_blank" class="block text-stone-500 py-2 text-sm border-t pt-3">Existing Clients Booking Portal</a>
+</div>
 </nav>
 
 <section class="bg-deep-green text-white py-20 px-6">
@@ -310,5 +333,10 @@
     </div>
   </div>
 </footer>
+<script>
+const mmb = document.getElementById('mobile-menu-button');
+const mmm = document.getElementById('mobile-menu');
+if (mmb) mmb.addEventListener('click', () => mmm.classList.toggle('hidden'));
+</script>
 </body>
   </html>
