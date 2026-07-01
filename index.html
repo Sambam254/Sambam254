@@ -247,6 +247,19 @@
     .cred-item i{color:var(--navy);width:16px;text-align:center;flex-shrink:0}
     .about-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:28px}
 
+  
+    .about-inner{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
+    .about-img-col{display:flex;flex-direction:column}
+    .about-img{width:100%;border-radius:12px;box-shadow:0 8px 32px rgba(13,22,40,0.15);display:block;margin-bottom:14px}
+    .about-credentials{display:flex;flex-direction:column;gap:0}
+    .cred-item{display:flex;align-items:center;gap:10px;padding:9px 12px;background:#f0f2f5;border-radius:6px;font-size:0.85rem;color:#1a1a1a;margin-bottom:6px;border-left:3px solid #0D1628}
+    .cred-item i{color:#0D1628;width:14px;text-align:center;flex-shrink:0}
+    .about-content h2{font-size:2rem;line-height:1.2;color:#0D1628}
+    .about-content p{color:#374151;line-height:1.7;margin-bottom:16px;font-size:0.97rem}
+    .about-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+    .hero-logo-img{width:480px!important;max-width:88vw!important;height:auto!important;border-radius:12px!important;margin-bottom:16px!important;box-shadow:0 12px 48px rgba(0,0,0,0.4)!important}
+    @media(max-width:768px){.about-inner{grid-template-columns:1fr}.about-img{max-width:240px;margin:0 auto 14px}}
+
   </style>
 </head>
 <body>
@@ -437,16 +450,7 @@
           <li>Delivered via email in under 4 hours</li>
           <li>One round of revisions included</li>
         </ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:auto;padding-top:20px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Resume + Cover Letter - OSTS Samantha Russell">
-          <input type="hidden" name="amount" value="79.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <input type="hidden" name="cancel_return" value="https://onestoptherapyshop.com/">
-          <button type="submit" class="pp-btn"><i class="fab fa-paypal" style="margin-right:8px"></i>Order Now via PayPal, $79 CAD</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Resume+%2B+Cover+Letter+-+OSTS+Samantha+Russell&amount=79.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p class="pp-note">Secure checkout &bull; Instant confirmation &bull; Work begins same day</p>
       </div>
 
@@ -464,16 +468,7 @@
           <li>Delivered in under 4 hours</li>
           <li>One round of revisions included</li>
         </ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:auto;padding-top:20px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Career Bundle (Resume + Cover Letter + LinkedIn) - OSTS Samantha Russell">
-          <input type="hidden" name="amount" value="99.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <input type="hidden" name="cancel_return" value="https://onestoptherapyshop.com/">
-          <button type="submit" class="pp-btn pp-btn-navy"><i class="fab fa-paypal" style="margin-right:8px"></i>Get the Bundle via PayPal, $99 CAD</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Career+Bundle+%28Resume+%2B+Cover+Letter+%2B+LinkedIn%29+-+OSTS+Samantha+Russell&amount=99.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p class="pp-note">Secure checkout &bull; Instant confirmation &bull; Work begins same day</p>
       </div>
 
@@ -490,16 +485,7 @@
           <li>Skills &amp; keyword strategy</li>
           <li>Recruiter-ready in 4 hours</li>
         </ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:auto;padding-top:20px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="LinkedIn Profile Optimization - OSTS Samantha Russell">
-          <input type="hidden" name="amount" value="49.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <input type="hidden" name="cancel_return" value="https://onestoptherapyshop.com/">
-          <button type="submit" class="pp-btn"><i class="fab fa-paypal" style="margin-right:8px"></i>Order Now via PayPal, $49 CAD</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=LinkedIn+Profile+Optimization+-+OSTS+Samantha+Russell&amount=49.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p class="pp-note">Secure checkout &bull; Instant confirmation &bull; Work begins same day</p>
       </div>
     </div>
@@ -518,16 +504,7 @@
           <li>Salary negotiation guidance</li>
           <li>Follow-up email template included</li>
         </ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:auto;padding-top:20px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Interview Coaching Session (60 min) - OSTS Samantha Russell">
-          <input type="hidden" name="amount" value="149.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <input type="hidden" name="cancel_return" value="https://onestoptherapyshop.com/">
-          <button type="submit" class="pp-btn"><i class="fab fa-paypal" style="margin-right:8px"></i>Book Session via PayPal, $149 CAD</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Interview+Coaching+Session+%2860+min%29+-+OSTS+Samantha+Russell&amount=149.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p class="pp-note">After payment, Samantha will contact you to schedule your session.</p>
       </div>
 
@@ -543,16 +520,7 @@
           <li>Personal brand positioning</li>
           <li>Email support between sessions</li>
         </ul>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:auto;padding-top:20px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Career Coaching Package (3 Sessions) - OSTS Samantha Russell">
-          <input type="hidden" name="amount" value="349.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <input type="hidden" name="cancel_return" value="https://onestoptherapyshop.com/">
-          <button type="submit" class="pp-btn"><i class="fab fa-paypal" style="margin-right:8px"></i>Get Started via PayPal, $349 CAD</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Career+Coaching+Package+%283+Sessions%29+-+OSTS+Samantha+Russell&amount=349.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p class="pp-note">After payment, Samantha will contact you to schedule your first session.</p>
       </div>
     </div>
@@ -605,30 +573,14 @@
         <h3>ATS Resume Template</h3>
         <p>Beat the bots. Clean, ATS-optimized single-page Canva template. Editable in minutes. Designed by a recruiter.</p>
         <div class="shop-price">$15 <span style="font-size:.8rem;color:var(--grey)">CAD</span></div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:12px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="ATS Resume Template - OSTS">
-          <input type="hidden" name="amount" value="15.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <button type="submit" class="pp-btn" style="font-size:.78rem;padding:10px"><i class="fab fa-paypal" style="margin-right:6px"></i>Buy Now, $15</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=ATS+Resume+Template+-+OSTS&amount=15.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
       </div>
       <div class="shop-card">
         <div class="shop-tag">Career</div>
         <h3>Cover Letter Template Pack</h3>
         <p>3 templates: general application, career change, and overqualified candidate. Plug-and-play format.</p>
         <div class="shop-price">$12 <span style="font-size:.8rem;color:var(--grey)">CAD</span></div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:12px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Cover Letter Template Pack (3 styles) - OSTS">
-          <input type="hidden" name="amount" value="12.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <button type="submit" class="pp-btn" style="font-size:.78rem;padding:10px"><i class="fab fa-paypal" style="margin-right:6px"></i>Buy Now, $12</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Cover+Letter+Template+Pack+%283+styles%29+-+OSTS&amount=12.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
       </div>
       <div class="shop-card" style="border:2px solid rgba(255,255,255,0.25);position:relative">
         <span style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.2);color:white;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px;border-radius:20px;white-space:nowrap">Best Value</span>
@@ -636,30 +588,14 @@
         <h3>Job Ready Kit</h3>
         <p>ATS resume template + 3 cover letters + LinkedIn checklist + 30-day job search tracker. Everything in one.</p>
         <div class="shop-price">$37 <span class="price-old">$49</span></div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:12px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Job Ready Kit Bundle - OSTS">
-          <input type="hidden" name="amount" value="37.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <button type="submit" class="pp-btn pp-btn-navy" style="font-size:.78rem;padding:10px"><i class="fab fa-paypal" style="margin-right:6px"></i>Buy Now, $37 (Save $12)</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Job+Ready+Kit+Bundle+-+OSTS&amount=37.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
       </div>
       <div class="shop-card">
         <div class="shop-tag">HR Resources</div>
         <h3>Small Business HR Toolkit</h3>
         <p>Offer letter, onboarding checklist, performance review, termination letter, warning letter. Ontario-compliant.</p>
         <div class="shop-price">$97 <span class="price-old">$147</span></div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin-top:12px">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Small Business HR Toolkit - OSTS">
-          <input type="hidden" name="amount" value="97.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <button type="submit" class="pp-btn" style="font-size:.78rem;padding:10px"><i class="fab fa-paypal" style="margin-right:6px"></i>Buy Now, $97 (Save $50)</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Small+Business+HR+Toolkit+-+OSTS&amount=97.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
       </div>
     </div>
     <!-- Career Starter Kit -->
@@ -677,15 +613,7 @@
       <div style="text-align:center;flex-shrink:0">
         <div style="font-family:var(--font-serif);font-size:3rem;font-weight:700;color:#ffffff;line-height:1">$37</div>
         <div style="font-size:.85rem;color:rgba(255,255,255,.5);text-decoration:line-through;margin-bottom:16px">was $129</div>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-          <input type="hidden" name="cmd" value="_xclick">
-          <input type="hidden" name="business" value="onestoptherapyshop@gmail.com">
-          <input type="hidden" name="item_name" value="Career Starter Kit (7 Templates) - OSTS">
-          <input type="hidden" name="amount" value="37.00">
-          <input type="hidden" name="currency_code" value="CAD">
-          <input type="hidden" name="return" value="https://onestoptherapyshop.com/order-flow/success.html">
-          <button type="submit" class="pp-btn" style="padding:14px 28px;font-size:.9rem"><i class="fab fa-paypal" style="margin-right:8px"></i>Buy Career Starter Kit, $37</button>
-        </form>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=onestoptherapyshop%40gmail.com&item_name=Career+Starter+Kit+%287+Templates%29+-+OSTS&amount=37.00&currency_code=CAD&no_shipping=1&no_note=1&return=https%3A%2F%2Fonestoptherapyshop.com%2Forder-flow%2Fsuccess.html&cancel_return=https%3A%2F%2Fonestoptherapyshop.com%2F%23services" target="_blank" rel="noopener" class="paypal-btn"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" style="height:18px;border-radius:2px;vertical-align:middle;margin-right:6px">Order Now</a>
         <p style="font-size:.7rem;color:rgba(255,255,255,.4);margin-top:8px">Instant download &bull; Ontario-ready</p>
       </div>
     </div>
@@ -697,50 +625,37 @@
 
 <section class="section" id="blog">
   <div class="container">
-    <div class="sh c">
-      <span class="tag">From an HR Professional's Desk</span>
-      <h2 class="h2">Career Insights &amp; HR Advice</h2>
-      <div class="divider-c"></div>
-      <p class="lead" style="margin:0 auto">Real hiring intelligence from someone who has been on both sides of the table. No generic tips, just what actually works.</p>
+    <div style="text-align:center;margin-bottom:40px">
+      <span class="section-label">FROM AN HR PROFESSIONAL'S DESK</span>
+      <h2>Career Insights &amp; HR Advice</h2>
+      <div class="section-divider" style="margin:16px auto 0"></div>
+      <p style="color:#6b7280;margin-top:16px;max-width:560px;margin-left:auto;margin-right:auto">Real hiring intelligence from someone who has been on both sides of the table. No generic tips. Just what actually works.</p>
     </div>
-    <div class="grid-3">
-      <a href="/blog/ats-resume-tips-canada.html" class="blog-card">
-        <div class="blog-card-hd" style="background:var(--navy)">
-          <span style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ffffff">Career Advice</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-date">June 30, 2026</div>
-          <div class="blog-title">ATS Resume Tips for Canadian Job Seekers (2026)</div>
-          <div class="blog-excerpt">Why 75% of resumes never reach a human, and what a recruiter says to do about it.</div>
-          <span class="blog-link">Read the Guide &rarr;</span>
-        </div>
-      </a>
-      <div class="blog-card" style="opacity:.75">
-        <div class="blog-card-hd" style="background:var(--green)">
-          <span style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:white">LinkedIn Strategy</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-date">Coming Soon</div>
-          <div class="blog-title">How to Write a LinkedIn Headline That Gets Recruiters to Click</div>
-          <div class="blog-excerpt">The formula I use for every client, and why most people get this completely wrong.</div>
-          <span class="blog-link" style="color:var(--grey)">Coming Soon</span>
-        </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-tag">Career Advice</div>
+        <div class="card-date">June 30, 2026</div>
+        <h3>ATS Resume Tips for Canadian Job Seekers (2026)</h3>
+        <p>Why 75% of resumes never reach a human, and what a recruiter says to do about it.</p>
+        <a href="/blog/ats-resume-tips-canada-2026.html" class="card-link">Read the Guide &rarr;</a>
       </div>
-      <div class="blog-card" style="opacity:.75">
-        <div class="blog-card-hd" style="background:#6b5d3f">
-          <span style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:white">Interview Prep</span>
-        </div>
-        <div class="blog-body">
-          <div class="blog-date">Coming Soon</div>
-          <div class="blog-title">How to Explain a Career Gap in a Job Interview (With Scripts)</div>
-          <div class="blog-excerpt">The exact words a recruiter wants to hear, and the framing that turns a gap into a strength.</div>
-          <span class="blog-link" style="color:var(--grey)">Coming Soon</span>
-        </div>
+      <div class="card">
+        <div class="card-tag">LinkedIn Strategy</div>
+        <div class="card-date">Coming Soon</div>
+        <h3>How to Write a LinkedIn Headline That Gets Recruiters to Click</h3>
+        <p>The formula used for every client, and why most people get this completely wrong.</p>
+        <span class="card-link" style="opacity:0.45;cursor:default">Coming Soon</span>
+      </div>
+      <div class="card">
+        <div class="card-tag">Interview Prep</div>
+        <div class="card-date">Coming Soon</div>
+        <h3>How to Explain a Career Gap in a Job Interview (With Scripts)</h3>
+        <p>The exact words a recruiter wants to hear, and the framing that turns a gap into a strength.</p>
+        <span class="card-link" style="opacity:0.45;cursor:default">Coming Soon</span>
       </div>
     </div>
-    <div style="text-align:center;margin-top:40px">
-      <p style="font-size:.85rem;color:var(--grey);margin-bottom:16px">New career and HR content published regularly. No legal content. No wellness tips. Just what moves careers forward.</p>
-      <a href="/career-resources.html" class="btn btn-outline">Browse All Resources &rarr;</a>
+    <div style="text-align:center;margin-top:32px">
+      <p style="color:#6b7280;font-size:0.9rem">New career and HR content published regularly.</p>
     </div>
   </div>
 </section>
