@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Complete Your Shop Order | One Stop Therapy Shop</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{font-family:'Georgia',serif;background:#f9f7f4}
+.card{background:white;border-radius:1.5rem;box-shadow:0 4px 24px rgba(0,0,0,0.07);border:1px solid #ede9e3}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#B8960C;box-shadow:0 0 0 3px rgba(184,150,12,0.15)}
+.btn-primary{background:#1B2A4A;color:white;transition:background 0.2s}
+.btn-primary:hover{background:#B8960C}
+.fl{display:block;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;margin-bottom:0.4rem}
+.fi{width:100%;padding:0.75rem 1rem;border-radius:0.75rem;border:1px solid #e5e7eb;color:#1f2937;transition:border 0.2s}
+.pay-btn{display:flex;align-items:center;justify-content:space-between;width:100%;padding:0.85rem 1.25rem;border-radius:0.75rem;border:2px solid #1B2A4A;color:#1B2A4A;font-weight:700;font-size:0.9rem;text-decoration:none;transition:all 0.2s;margin-bottom:0.6rem}
+.pay-btn:hover{background:#1B2A4A;color:white}
+.pay-btn.gold{border-color:#B8960C;color:#B8960C}
+.pay-btn.gold:hover{background:#B8960C;color:white}
+</style>
+</head>
+<body class="min-h-screen py-12 px-4">
+<div class="max-w-xl mx-auto">
+  <div class="text-center mb-8">
+    <a href="/"><img src="/assets/osts-circle-logo.png" alt="One Stop Therapy Shop" style="height:60px;margin:0 auto 1rem;" /></a>
+    <h1 class="text-3xl font-bold mb-2" style="color:#1B2A4A">Complete Your Order</h1>
+    <p class="text-gray-500 text-sm">Pay via PayPal below, then submit your email so we can send your templates.</p>
+  </div>
+
+  <!-- STEP 1: PAY -->
+  <div class="card p-8 mb-6">
+    <h2 class="text-lg font-bold mb-1" style="color:#1B2A4A">Step 1 &mdash; Choose &amp; Pay via PayPal</h2>
+    <p class="text-gray-400 text-sm mb-5">Click your product. You'll be taken to PayPal and returned here.</p>
+
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">HR &amp; Recruitment</p>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/97" target="_blank" onclick="setProduct('Small Business HR Toolkit - $97 CAD')" class="pay-btn">
+      <span>&#128188; Small Business HR Toolkit</span><span>$97 CAD</span>
+    </a>
+
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2 mt-4">Career &amp; Resume</p>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/15" target="_blank" onclick="setProduct('ATS Resume Template - $15 CAD')" class="pay-btn gold">
+      <span>&#128196; ATS Resume Template</span><span>$15 CAD</span>
+    </a>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/12" target="_blank" onclick="setProduct('Cover Letter Template Pack - $12 CAD')" class="pay-btn gold">
+      <span>&#128206; Cover Letter Template Pack (3 styles)</span><span>$12 CAD</span>
+    </a>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/9" target="_blank" onclick="setProduct('LinkedIn Profile Checklist - $9 CAD')" class="pay-btn gold">
+      <span>&#9989; LinkedIn Profile Checklist</span><span>$9 CAD</span>
+    </a>
+
+    <p class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2 mt-4">Bundles</p>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/37" target="_blank" onclick="setProduct('Job Ready Kit Bundle - $37 CAD')" class="pay-btn gold">
+      <span>&#128640; Job Ready Kit (Resume + Cover Letters + LinkedIn)</span><span>$37 CAD</span>
+    </a>
+    <a href="https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/37" target="_blank" onclick="setProduct('Career Starter Kit Bundle - $37 CAD')" class="pay-btn gold">
+      <span>&#127775; Career Starter Kit (7 career templates)</span><span>$37 CAD</span>
+    </a>
+  </div>
+
+  <!-- STEP 2: SUBMIT EMAIL -->
+  <div class="card p-8">
+    <h2 class="text-lg font-bold mb-1" style="color:#1B2A4A">Step 2 &mdash; Submit Your Details</h2>
+    <p class="text-gray-400 text-sm mb-6">After paying, fill this out. Your templates arrive by email within 24 hours.</p>
+    <form action="https://formsubmit.co/onestoptherapyshop@gmail.com" method="POST" class="space-y-5">
+      <input type="hidden" name="_subject" value="NEW SHOP ORDER - Template Delivery Required"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://onestoptherapyshop.com/shop-confirmation.html"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_autoresponse" value="Thank you for your order from One Stop Therapy Shop! We have received your request and your templates will be sent to this email within 24 hours. If you have any questions, reply to this email or contact onestoptherapyshop@gmail.com. - Samantha, OSTS"/>
+
+      <div><label class="fl">Full Name</label><input type="text" name="Full Name" required placeholder="Jane Smith" class="fi"/></div>
+      <div><label class="fl">Email Address (where to send your files)</label><input type="email" name="Email Address" required placeholder="jane@email.com" class="fi"/></div>
+      <div>
+        <label class="fl">Product Purchased</label>
+        <select name="Product Purchased" required id="productSelect" class="fi" style="background:white">
+          <option value="">Select the product you just paid for...</option>
+          <option value="Small Business HR Toolkit - $97 CAD">Small Business HR Toolkit - $97 CAD</option>
+          <option value="ATS Resume Template - $15 CAD">ATS Resume Template - $15 CAD</option>
+          <option value="Cover Letter Template Pack - $12 CAD">Cover Letter Template Pack - $12 CAD</option>
+          <option value="LinkedIn Profile Checklist - $9 CAD">LinkedIn Profile Checklist - $9 CAD</option>
+          <option value="Job Ready Kit Bundle - $37 CAD">Job Ready Kit Bundle - $37 CAD</option>
+          <option value="Career Starter Kit Bundle - $37 CAD">Career Starter Kit Bundle - $37 CAD</option>
+          <option value="Legal Starter Pack - $57 CAD">Legal Starter Pack - $57 CAD</option>
+          <option value="Complete Ontario Legal Kit - $47 CAD">Complete Ontario Legal Kit - $47 CAD</option>
+          <option value="Life Admin Bundle - $67 CAD">Life Admin Bundle - $67 CAD</option>
+        </select>
+      </div>
+      <div><label class="fl">Notes (optional)</label><textarea name="Notes" placeholder="Special instructions, preferred name on document, etc." class="fi" style="height:4rem"></textarea></div>
+      <div class="flex items-start gap-3 p-4 rounded-xl" style="background:#fffbeb;border:1px solid #fde68a">
+        <input type="checkbox" name="Payment Confirmed" required class="mt-1 w-5 h-5" style="accent-color:#1B2A4A"/>
+        <p class="text-sm text-gray-700">I confirm I have completed my PayPal payment in Step 1 above.</p>
+      </div>
+      <button type="submit" class="btn-primary w-full py-4 rounded-xl font-bold text-lg shadow-md">Submit &mdash; Send Me My Templates</button>
+      <p class="text-center text-xs text-gray-400 mt-2">Templates delivered to your email within 24 hours. Questions? onestoptherapyshop@gmail.com</p>
+    </form>
+  </div>
+  <p class="text-center text-xs text-gray-400 mt-8">2026 One Stop Therapy Shop &mdash; Oshawa, Ontario</p>
+</div>
+<script>
+function setProduct(name) {
+  var sel = document.getElementById('productSelect');
+  if (sel) { for (var i = 0; i < sel.options.length; i++) { if (sel.options[i].value === name) { sel.selectedIndex = i; break; } } }
+  setTimeout(function(){ document.getElementById('productSelect').scrollIntoView({behavior:'smooth',block:'center'}); }, 400);
+}
+</script>
+</body>
+</html>
