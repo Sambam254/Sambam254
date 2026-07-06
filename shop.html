@@ -170,17 +170,17 @@ const mmBtn = document.getElementById('mobile-menu-button');
 const mmMenu = document.getElementById('mobile-menu');
 if (mmBtn) mmBtn.addEventListener('click', () => mmMenu.classList.toggle('hidden'));
 </script>
-  <div id="templateModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center">
+  <div id="templateModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;align-items:center;justify-content:center;align-items:center;justify-content:center">
     <div style="background:white;border-radius:12px;padding:40px;max-width:400px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3)">
-      <button onclick="closeTemplateModal()" style="float:right;background:none;border:none;font-size:24px;cursor:pointer;color:#999">&times;</button>button>
-      <h2 style="font-family:'Playfair Display',serif;color:#1B2A4A;margin-bottom:10px;margin-top:0">Complete Your Order</h2>h2>
-      <p style="color:#666;font-size:14px;margin-bottom:25px">Full Name • Email • Payment</p>p>
+      <button onclick="closeTemplateModal()" style="float:right;background:none;border:none;font-size:24px;cursor:pointer;color:h#999">&times;</button>
+      <h2 style="font-family:'Playfair Display',serif;color:#1B2A4A;margin-bottom:10px;margin-top:0">Complete Your Order</h2>
+      <p style="color:#666;font-size:14px;margin-bottom:25px">Full Name • Email • Payment</p>
       <form onsubmit="submitTemplateOrder(event)" style="display:flex;flex-direction:column;gap:15px">
         <input type="text" id="templateName" required placeholder="Your full name" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:14px;box-sizing:border-box">
         <input type="email" id="templateEmail" required placeholder="your@email.com" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:14px;box-sizing:border-box">
         <input type="hidden" id="templatePrice" value="">
-        <button type="submit" style="background:#B8960C;color:white;border:none;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;margin-top:10px;font-size:14px">Proceed to Payment</button>button>
-      </form>form></div>div></div>div>
+        <button type="submit" style="background:#B8960C;color:white;border:none;padding:12px;border-radius:6px;font-weight:600;cursor:pointer;margin-top:10px;font-size:14px">Proceed to Payment</button>
+      </form></div>div></div>div>
   <script>function openTemplateModal(price){document.getElementById('templatePrice').value=price;document.getElementById('templateModal').style.display='flex'}function closeTemplateModal(){document.getElementById('templateModal').style.display='none';document.getElementById('templateName').value='';document.getElementById('templateEmail').value=''}function submitTemplateOrder(e){e.preventDefault();const n=document.getElementById('templateName').value;const m=document.getElementById('templateEmail').value;const p=document.getElementById('templatePrice').value;window.location.href=`https://www.paypal.com/paypalme/ONESTOPTHERAPYSHOP/${p}?message=${encodeURIComponent(n+' | '+m)}`}document.getElementById('templateModal').addEventListener('click',function(e){if(e.target===this)closeTemplateModal()})</script>h</script>
 </body>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             </html>
