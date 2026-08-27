@@ -22,5 +22,5 @@ To set up the ordering process, create a Google Form with the following fields:
 
 ## 4. Payment Setup
 After they submit the form:
-1. **Confirmation Message:** "Thanks! We've received your info. To finalize your order and start our 4-hour countdown, please complete your payment of [Amount] via PayPal: https://www.paypal.me/careerboost. We'll send your documents to [Email] once confirmed!"
+1. **Confirmation Message:** "Thanks! We've received your info. To finalize your order and get started right away, please complete your payment of [Amount] via PayPal: https://www.paypal.me/careerboost. We'll send your documents to [Email] once confirmed!"
 2. **Redirect (Optional):** If using a form builder that supports it, redirect to `success.html`.
