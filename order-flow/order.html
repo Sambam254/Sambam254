@@ -33,9 +33,9 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#c9a84c;box-sh
 <div class="card p-8 mb-8">
 <h2 class="text-xl font-bold mb-1" style="color:#1a3c2e">1. Choose Your Package and Pay</h2>
 <p class="text-gray-400 text-sm mb-6">Click your package to pay securely via PayPal.</p>
-<a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" class="pkg-btn"><span>Resume + Cover Letter</span><span>$79</span></a>
-<a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" class="pkg-btn featured"><span>Career Bundle (Best Value)</span><span>$99</span></a>
-<a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" class="pkg-btn"><span>LinkedIn Overhaul Only</span><span>$49</span></a>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/79" target="_blank" onclick="selectPackage('Resume + Cover Letter ($79)')" class="pkg-btn"><span>Resume + Cover Letter</span><span>$79</span></a>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/99" target="_blank" onclick="selectPackage('Career Bundle ($99)')" class="pkg-btn featured"><span>Career Bundle (Best Value)</span><span>$99</span></a>
+<a href="https://paypal.me/ONESTOPTHERAPYSHOP/49" target="_blank" onclick="selectPackage('LinkedIn Only ($49)')" class="pkg-btn"><span>LinkedIn Overhaul Only</span><span>$49</span></a>
 </div>
 <div class="card p-8">
 <h2 class="text-xl font-bold mb-1" style="color:#1a3c2e">2. Submit Your Details</h2>
@@ -89,5 +89,17 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:#c9a84c;box-sh
 </div>
 <p class="text-center text-xs text-gray-400 mt-8">2026 One Stop Therapy Shop. All rights reserved.</p>
 </div>
+<script>
+function selectPackage(val){
+  var s = document.querySelector('select[name="service"]');
+  if (!s) return;
+  for (var i = 0; i < s.options.length; i++) {
+    if (s.options[i].value === val) { s.selectedIndex = i; break; }
+  }
+}
+var pkgMap = {'resume':'Resume + Cover Letter ($79)','bundle':'Career Bundle ($99)','linkedin':'LinkedIn Only ($49)'};
+var pkgParam = new URLSearchParams(window.location.search).get('pkg') || '';
+if (pkgMap[pkgParam]) { selectPackage(pkgMap[pkgParam]); }
+</script>
 </body>
 </html>
